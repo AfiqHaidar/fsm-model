@@ -1,0 +1,31 @@
+{
+    "Web": [
+      {
+        "name": "Web",
+        "initial_state": "e",
+        "states": [
+          "e",
+          "bing.com",
+          "mozilla.org"
+        ],
+        "triggers": [
+          "aplikasi membuka halaman web",
+          "user membuka bing",
+          "user search mozilla",
+          "user membuka mozilla",
+          "melakukan klik link download firefox"
+        ],
+        "transitions": [
+            { "trigger": "user membuka bing", "source": "e", "dest": "bing.com" },
+            { "trigger": "user search mozilla", "source": "bing.com", "dest": "bing.com" },
+            { "trigger": "user membuka mozilla", "source": "bing.com", "dest": "mozilla.org" },
+            { "trigger": "melakukan klik link download firefox", "source": "mozilla.org", "dest": "mozilla.org" }
+           
+        ],
+        "functions": {
+          
+        }
+      }
+    ]
+  }
+  
