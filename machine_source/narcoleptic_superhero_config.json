@@ -5,6 +5,7 @@
       "initial_state": "asleep",
       "states": [
         "asleep",
+        "tired",
         "hanging out",
         "hungry",
         "sweaty",
