@@ -1,0 +1,74 @@
+{
+    "WebActivityMachine": [
+        {
+            "name": "Domain_20250319_184916",
+            "initial_state": "www.bing.com",
+            "states": [
+                "www.bing.com",
+                "edge.microsoft.com",
+                "msn.com",
+                "ntp.msn.com",
+                "edgeassetservice.azureedge.net",
+                "www.microsoft.com",
+                "go.microsoft.com",
+                "edgestatic.azureedge.net"
+            ],
+            "triggers": [
+                "next"
+            ],
+            "transitions": [
+                {
+                    "trigger": "next",
+                    "source": "edge.microsoft.com",
+                    "dest": "msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgeassetservice.azureedge.net",
+                    "dest": "ntp.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "go.microsoft.com",
+                    "dest": "www.microsoft.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "msn.com",
+                    "dest": "ntp.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com",
+                    "dest": "edgeassetservice.azureedge.net"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com",
+                    "dest": "msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com",
+                    "dest": "www.microsoft.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com",
+                    "dest": "edge.microsoft.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.microsoft.com",
+                    "dest": "edgestatic.azureedge.net"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.microsoft.com",
+                    "dest": "go.microsoft.com"
+                }
+            ],
+            "functions": {}
+        }
+    ]
+}

@@ -1,0 +1,576 @@
+{
+    "WebActivityMachine": [
+        {
+            "name": "Domain_20250319_184729",
+            "initial_state": "www.bing.com",
+            "states": [
+                "www.bing.com",
+                "edge.microsoft.com",
+                "msn.com",
+                "ntp.msn.com",
+                "edgeassetservice.azureedge.net",
+                "www.microsoft.com",
+                "go.microsoft.com",
+                "edgestatic.azureedge.net",
+                "assets.msn.com",
+                "www2.bing.com",
+                "apps.identrust.com",
+                "x1.i.lencr.org",
+                "adnxs.com",
+                "r3.i.lencr.org",
+                "trace.mediago.io",
+                "mediago.io",
+                "bing.com",
+                "www.mozilla.org",
+                "www.googletagmanager.com",
+                "trace.popin.cc",
+                "popin.cc",
+                "www.google-analytics.com",
+                "mozilla.org",
+                "sync.inmobi.com",
+                "download.mozilla.org",
+                "id5-sync.com",
+                "stubdownloader.services.mozilla.com",
+                "cdn.stubdownloader.services.mozilla.com",
+                "img-s-msn-com.akamaized.net",
+                "th.bing.com",
+                "px.ads.linkedin.com",
+                "linkedin.com",
+                "sync.outbrain.com",
+                "pr-bh.ybp.yahoo.com",
+                "r.bing.com",
+                "wcpstatic.microsoft.com",
+                "login.microsoftonline.com",
+                "login.live.com",
+                "windows.msn.com",
+                "api.msn.com",
+                "google.com",
+                "www.google.com",
+                "ogs.google.com",
+                "www.w3schools.com",
+                "w3schools.com"
+            ],
+            "triggers": [
+                "next"
+            ],
+            "transitions": [
+                {
+                    "trigger": "next",
+                    "source": "adnxs.com",
+                    "dest": "download.mozilla.org"
+                },
+                {
+                    "trigger": "next",
+                    "source": "adnxs.com",
+                    "dest": "r3.i.lencr.org"
+                },
+                {
+                    "trigger": "next",
+                    "source": "api.msn.com",
+                    "dest": "assets.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "apps.identrust.com",
+                    "dest": "msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com",
+                    "dest": "adnxs.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com",
+                    "dest": "bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com",
+                    "dest": "cdn.stubdownloader.services.mozilla.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com",
+                    "dest": "img-s-msn-com.akamaized.net"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com",
+                    "dest": "login.live.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com",
+                    "dest": "msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com",
+                    "dest": "pr-bh.ybp.yahoo.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com",
+                    "dest": "px.ads.linkedin.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com",
+                    "dest": "th.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com",
+                    "dest": "trace.mediago.io"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com",
+                    "dest": "www.mozilla.org"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com",
+                    "dest": "www2.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com",
+                    "dest": "login.microsoftonline.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com",
+                    "dest": "ntp.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com",
+                    "dest": "r.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com",
+                    "dest": "sync.outbrain.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com",
+                    "dest": "th.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com",
+                    "dest": "www.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "cdn.stubdownloader.services.mozilla.com",
+                    "dest": "assets.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "cdn.stubdownloader.services.mozilla.com",
+                    "dest": "download.mozilla.org"
+                },
+                {
+                    "trigger": "next",
+                    "source": "download.mozilla.org",
+                    "dest": "id5-sync.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "download.mozilla.org",
+                    "dest": "stubdownloader.services.mozilla.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edge.microsoft.com",
+                    "dest": "msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edge.microsoft.com",
+                    "dest": "www.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgeassetservice.azureedge.net",
+                    "dest": "img-s-msn-com.akamaized.net"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgeassetservice.azureedge.net",
+                    "dest": "ntp.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgeassetservice.azureedge.net",
+                    "dest": "www.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net",
+                    "dest": "msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net",
+                    "dest": "r.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "go.microsoft.com",
+                    "dest": "www.microsoft.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "google.com",
+                    "dest": "ogs.google.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "google.com",
+                    "dest": "www.google.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "google.com",
+                    "dest": "www.w3schools.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "id5-sync.com",
+                    "dest": "assets.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "id5-sync.com",
+                    "dest": "stubdownloader.services.mozilla.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "img-s-msn-com.akamaized.net",
+                    "dest": "assets.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "img-s-msn-com.akamaized.net",
+                    "dest": "edgeassetservice.azureedge.net"
+                },
+                {
+                    "trigger": "next",
+                    "source": "img-s-msn-com.akamaized.net",
+                    "dest": "th.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "linkedin.com",
+                    "dest": "bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "login.live.com",
+                    "dest": "assets.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "login.live.com",
+                    "dest": "mozilla.org"
+                },
+                {
+                    "trigger": "next",
+                    "source": "login.microsoftonline.com",
+                    "dest": "www.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "mediago.io",
+                    "dest": "www.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "mozilla.org",
+                    "dest": "assets.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "mozilla.org",
+                    "dest": "bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "mozilla.org",
+                    "dest": "www.mozilla.org"
+                },
+                {
+                    "trigger": "next",
+                    "source": "msn.com",
+                    "dest": "assets.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "msn.com",
+                    "dest": "ntp.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com",
+                    "dest": "bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com",
+                    "dest": "edgeassetservice.azureedge.net"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com",
+                    "dest": "msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com",
+                    "dest": "www.microsoft.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com",
+                    "dest": "x1.i.lencr.org"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ogs.google.com",
+                    "dest": "www.google.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "popin.cc",
+                    "dest": "www.mozilla.org"
+                },
+                {
+                    "trigger": "next",
+                    "source": "pr-bh.ybp.yahoo.com",
+                    "dest": "assets.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "px.ads.linkedin.com",
+                    "dest": "linkedin.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com",
+                    "dest": "bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com",
+                    "dest": "th.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com",
+                    "dest": "wcpstatic.microsoft.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com",
+                    "dest": "www.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r3.i.lencr.org",
+                    "dest": "trace.mediago.io"
+                },
+                {
+                    "trigger": "next",
+                    "source": "stubdownloader.services.mozilla.com",
+                    "dest": "assets.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "stubdownloader.services.mozilla.com",
+                    "dest": "id5-sync.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "sync.inmobi.com",
+                    "dest": "mozilla.org"
+                },
+                {
+                    "trigger": "next",
+                    "source": "sync.outbrain.com",
+                    "dest": "assets.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "th.bing.com",
+                    "dest": "assets.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "th.bing.com",
+                    "dest": "img-s-msn-com.akamaized.net"
+                },
+                {
+                    "trigger": "next",
+                    "source": "th.bing.com",
+                    "dest": "r.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "th.bing.com",
+                    "dest": "www.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "trace.mediago.io",
+                    "dest": "mediago.io"
+                },
+                {
+                    "trigger": "next",
+                    "source": "trace.popin.cc",
+                    "dest": "popin.cc"
+                },
+                {
+                    "trigger": "next",
+                    "source": "w3schools.com",
+                    "dest": "www.w3schools.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "wcpstatic.microsoft.com",
+                    "dest": "edgestatic.azureedge.net"
+                },
+                {
+                    "trigger": "next",
+                    "source": "windows.msn.com",
+                    "dest": "api.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com",
+                    "dest": "assets.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com",
+                    "dest": "bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com",
+                    "dest": "edge.microsoft.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com",
+                    "dest": "edgeassetservice.azureedge.net"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com",
+                    "dest": "r.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com",
+                    "dest": "trace.mediago.io"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com",
+                    "dest": "windows.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com",
+                    "dest": "www.mozilla.org"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.google-analytics.com",
+                    "dest": "mozilla.org"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.google.com",
+                    "dest": "google.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.googletagmanager.com",
+                    "dest": "www.google-analytics.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.googletagmanager.com",
+                    "dest": "www.mozilla.org"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.microsoft.com",
+                    "dest": "edgestatic.azureedge.net"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.microsoft.com",
+                    "dest": "go.microsoft.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org",
+                    "dest": "assets.msn.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org",
+                    "dest": "google.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org",
+                    "dest": "mozilla.org"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org",
+                    "dest": "sync.inmobi.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org",
+                    "dest": "trace.popin.cc"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org",
+                    "dest": "www.bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org",
+                    "dest": "www.googletagmanager.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.w3schools.com",
+                    "dest": "w3schools.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www2.bing.com",
+                    "dest": "apps.identrust.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "x1.i.lencr.org",
+                    "dest": "adnxs.com"
+                }
+            ],
+            "functions": {}
+        }
+    ]
+}

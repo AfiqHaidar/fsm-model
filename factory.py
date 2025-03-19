@@ -32,18 +32,21 @@ class MachineFactory:
     @staticmethod
     def get_source():
         json_data_list = []
-        for filename in os.listdir('machine_source'):
-            if filename.endswith('.json'):
-                file_path = os.path.join('machine_source', filename)
 
-                with open(file_path, 'r') as file:
-                    try:
-                        config_data = json.load(file)
-                        json_data_list.append(config_data)
-                    except json.JSONDecodeError:
-                        print(f"Error decoding JSON file: {filename}")
-                    except Exception as e:
-                        print(f"Error reading file {filename}: {e}")
+        # Walk through 'machine_source' and its subdirectories
+        for root, _, files in os.walk('machine_source'):
+            for filename in files:
+                if filename.endswith('.json'):
+                    file_path = os.path.join(root, filename)
+
+                    with open(file_path, 'r', encoding="utf-8") as file:
+                        try:
+                            config_data = json.load(file)
+                            json_data_list.append(config_data)
+                        except json.JSONDecodeError:
+                            print(f"Error decoding JSON file: {file_path}")
+                        except Exception as e:
+                            print(f"Error reading file {file_path}: {e}")
 
         return json_data_list
 

@@ -1,16 +1,16 @@
 import os
+from processor import generate_json
 from factory import MachineFactory
 from runner import run_random_simulation, run_path_simulation, run_graph_simulation
-from script import domain_based, url_based, uri_based, custom_rules
+from script.domain_based import domain_extract
+from script.url_based import url_extract
 
 # ==== CONSTANTS ====
 RAW_DATA_DIR = "raw_data/"
 OUTPUT_DIR = "machine_source/"
 SCRIPT_OPTIONS = {
-    "1": domain_based.generate_json,
-    "2": url_based.generate_json,
-    "3": uri_based.generate_json,
-    "4": custom_rules.generate_json
+    "1": ("Domain-Based Extraction", domain_extract, "domain"),
+    "2": ("URL-Based Extraction", url_extract, "url"),
 }
 MENU_OPTIONS = {
     "1": "machines",
@@ -86,13 +86,11 @@ def choose_csv():
         print("Invalid choice. Please select a valid file.")
 
 
-def choose_script():
+def choose_extractor():
     while True:
-        print("\nChoose a script to process the CSV:")
-        print("1. Domain-Based Extraction")
-        print("2. URL-Based Extraction")
-        print("3. URI-Based Extraction")
-        print("4. Custom Rules-Based Extraction")
+        print("\nChoose an extraction method:")
+        for key, (desc, _, _) in SCRIPT_OPTIONS.items():
+            print(f"{key}. {desc}")
         print("0. Back to CSV Selection")
 
         choice = input("\nEnter your choice (0 to go back): ")
@@ -124,13 +122,14 @@ def generate_source():
         if csv_file is None:
             return
 
-        script_function = choose_script()
-        if script_function is None:
+        extractor_choice = choose_extractor()
+        if extractor_choice is None:
             continue
 
-        print(
-            f"Generating source using {script_function.__name__} on {csv_file}...")
-        script_function(csv_file, OUTPUT_DIR)
+        extractor_name, extract_function, prefix = extractor_choice
+        print(f"\nGenerating source using {extractor_name} on {csv_file}...\n")
+        generate_json(csv_file, OUTPUT_DIR, extract_function, prefix)
+
 
 # ==== MAIN FUNCTION ====
 

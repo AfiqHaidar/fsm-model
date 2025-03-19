@@ -1,5 +1,0 @@
-datetime	timestamp_desc	source	source_long	message	parser	display_name	tag
-2023-12-26 00:34:33.459996+00:00	Creation Time	WEBHIST	Chrome Cache	Original URL: https://www.bing.com/bloomfilterfiles/ExpandedDomainsFilterGlobal.json	chrome_cache	NTFS:\Users\User\AppData\Local\Microsoft\Edge\User Data\Default\Cache\Cache_Data\index	-
-2023-12-26 00:34:59.389128+00:00	Creation Time	WEBHIST	Chrome Cookies	https://msn.com/ (MUID) Flags: [HTTP only] = False [Persistent] = True	sqlite/chrome_66_cookies	NTFS:\Users\User\AppData\Local\Microsoft\Edge\User Data\Default\Network\Cookies	-
-2023-12-26 00:35:11.782219+00:00	Last Visited Time	WEBHIST	Chrome History	https://www.microsoft.com/en-us/edge/welcome?ep=255&form=MT00L8&es=59	chrome_27_history	NTFS:\Users\User\AppData\Local\Microsoft\Edge\User Data\Default\History	-
-2023-12-26 00:35:12.371259+00:00	Creation Time	WEBHIST	Chrome Cache	Original URL: https://edgestatic.azureedge.net/shared/edgeweb/fbf5b3f.js	chrome_cache	NTFS:\Users\User\AppData\Local\Microsoft\Edge\User Data\Default\Cache\Cache_Data\index	-
