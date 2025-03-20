@@ -2,8 +2,10 @@ import os
 from processor import generate_json
 from factory import MachineFactory
 from runner import run_random_simulation, run_path_simulation, run_graph_simulation
-from script.domain_based import domain_extract
-from script.url_based import url_extract
+from script.domain import domain_extract
+from script.dynamic import dynamic_extract
+from script.url import url_extract
+
 
 # ==== CONSTANTS ====
 RAW_DATA_DIR = "raw_data/"
@@ -11,6 +13,7 @@ OUTPUT_DIR = "machine_source/"
 SCRIPT_OPTIONS = {
     "1": ("Domain-Based Extraction", domain_extract, "domain"),
     "2": ("URL-Based Extraction", url_extract, "url"),
+    "3": ("Dynamic Extraction", dynamic_extract, "dynamic"),
 }
 MENU_OPTIONS = {
     "1": "machines",

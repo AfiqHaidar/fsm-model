@@ -1,0 +1,3 @@
+- tambahin rules pada search
+- tambahin general rules.
+- tambahin length

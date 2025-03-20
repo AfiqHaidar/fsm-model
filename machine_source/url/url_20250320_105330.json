@@ -1,0 +1,2480 @@
+{
+    "WebActivityMachine": [
+        {
+            "name": "Url_20250320_105330",
+            "initial_state": "www.bing.com/bloomfilterfiles/ExpandedDomainsFilterGlobal.json",
+            "states": [
+                "www.bing.com/bloomfilterfiles/ExpandedDomainsFilterGlobal.json",
+                "edge.microsoft.com/entityextractiontemplates/api/v1/assets/find-assets",
+                "msn.com/",
+                "ntp.msn.com/",
+                "ntp.msn.com/bundles/v1/edgeChromium/latest/SSR-extension.3665564e43732e273662.js",
+                "edgeassetservice.azureedge.net/assets/domains_config_gz/3.0.5/asset",
+                "ntp.msn.com/bundles/v1/edgeChromium/latest/web-worker.a1e7085adc01f64a7777.js",
+                "www.microsoft.com/en-us/edge/welcome",
+                "go.microsoft.com/fwlink/",
+                "www.microsoft.com/edge/welcome",
+                "edgestatic.azureedge.net/shared/edgeweb/622dd1f.js",
+                "edgestatic.azureedge.net/shared/edgeweb/e723d85.js",
+                "edgestatic.azureedge.net/shared/edgeweb/css/0295ecc.css",
+                "edgestatic.azureedge.net/shared/edgeweb/css/abea44a.css",
+                "edgestatic.azureedge.net/shared/edgeweb/css/0045370.css",
+                "edgestatic.azureedge.net/shared/edgeweb/css/676e4a6.css",
+                "edgestatic.azureedge.net/shared/edgeweb/css/2c1a379.css",
+                "edgestatic.azureedge.net/shared/edgeweb/css/63e3356.css",
+                "edgestatic.azureedge.net/shared/edgeweb/css/c2ff623.css",
+                "edgestatic.azureedge.net/shared/edgeweb/css/069d68d.css",
+                "edgestatic.azureedge.net/shared/edgeweb/fc015a7.js",
+                "edgestatic.azureedge.net/shared/edgeweb/fbf5b3f.js",
+                "edgestatic.azureedge.net/shared/edgeweb/1fb2008.js",
+                "edgestatic.azureedge.net/shared/edgeweb/1a5a217.js",
+                "edgestatic.azureedge.net/shared/edgeweb/565e170.js",
+                "edgestatic.azureedge.net/shared/edgeweb/264b7f5.js",
+                "edgestatic.azureedge.net/shared/edgeweb/cee86ed.js",
+                "edgestatic.azureedge.net/shared/edgeweb/035bac1.js",
+                "edgestatic.azureedge.net/shared/cms/lrs1c69a1j/logos/5a74283229e24d0ca59fb94ed941c3a0.png",
+                "assets.msn.com/content/v1/cms/api/amp/Document/BBZpYX5",
+                "www2.bing.com/",
+                "apps.identrust.com/roots/dstrootcax3.p7c",
+                "ntp.msn.com/edge/ntp/service-worker.js",
+                "x1.i.lencr.org/",
+                "adnxs.com/",
+                "r3.i.lencr.org/",
+                "trace.mediago.io/cs/msn",
+                "mediago.io/",
+                "www.bing.com/ck/a",
+                "bing.com/",
+                "www.bing.com/search",
+                "www.mozilla.org/en-US/firefox/new/",
+                "www.bing.com/favicon.ico",
+                "www.mozilla.org/media/js/site.9537923fdd7f.js",
+                "www.mozilla.org/media/css/protocol-firefox.03b44773f9ba.css",
+                "www.mozilla.org/media/css/protocol-card.d77db2f7c1c0.css",
+                "www.mozilla.org/media/css/protocol-emphasis-box.4ddd0fb346b4.css",
+                "www.mozilla.org/media/css/firefox_desktop_download.21f80248506d.css",
+                "www.mozilla.org/media/js/gtm-snippet.a788d552f536.js",
+                "www.mozilla.org/media/js/sentry.bef0cad3910b.js",
+                "www.mozilla.org/media/js/lib.f7cc5ac1f5fe.js",
+                "www.mozilla.org/media/js/ui.cc2c33643e11.js",
+                "www.mozilla.org/media/js/fxa.d28e0add80be.js",
+                "www.mozilla.org/media/js/data.6993caf19b0c.js",
+                "www.mozilla.org/media/js/stub-attribution.bd58bded0c23.js",
+                "www.mozilla.org/media/js/firefox_desktop_download.bb43a8702653.js",
+                "www.mozilla.org/media/js/firefox_new_desktop_join_modal.4eac3318aa72.js",
+                "www.mozilla.org/media/protocol/img/logos/mozilla/logo-word-hor.e20791bb4dd4.svg",
+                "www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg",
+                "www.mozilla.org/media/img/l10n/en-US/firefox/android/btn-google-play.77bdbc935c58.png",
+                "www.mozilla.org/media/img/l10n/en-US/firefox/ios/btn-app-store.1cfd5dba4a92.svg",
+                "www.googletagmanager.com/gtm.js",
+                "www.mozilla.org/media/protocol/fonts/Metropolis-Bold.6a80125e795a.woff2",
+                "www.mozilla.org/media/protocol/fonts/Inter-Bold.0564381b22b2.woff2",
+                "www.mozilla.org/media/protocol/img/logos/firefox/browser/logo-word-hor.7ff44b5b4194.svg",
+                "www.mozilla.org/media/protocol/fonts/Inter-Regular.d55e957612a3.woff2",
+                "www.mozilla.org/media/img/firefox/new/desktop/hero-mr1.c078ff206641.png",
+                "www.mozilla.org/media/img/firefox/new/desktop/release-noodles.9d2052dac440.svg",
+                "www.mozilla.org/media/protocol/img/zaps/zap-08.fc201d70f76b.svg",
+                "www.mozilla.org/media/protocol/img/zaps/zap-11.b89f1adfc49b.svg",
+                "www.mozilla.org/media/img/firefox/new/desktop/comparison-noodles-mr1.c18c975efae6.svg",
+                "www.mozilla.org/media/img/firefox/new/desktop/feature-fxview.5cbce5a8ee41.svg",
+                "www.mozilla.org/media/img/firefox/new/desktop/feature-pdf-edit.1caefd8b6df8.svg",
+                "www.mozilla.org/media/img/firefox/new/desktop/feature-tracking-protection-shield.5966cde25a83.svg",
+                "www.mozilla.org/media/img/logos/chrome/logo-chrome.36729db6cd71.png",
+                "www.mozilla.org/media/img/firefox/new/desktop/icon-check.a288e927664c.svg",
+                "www.mozilla.org/media/img/firefox/new/desktop/icon-dash.17b7c28a843b.svg",
+                "www.mozilla.org/media/protocol/img/zaps/zap-14.59889e9bbc67.svg",
+                "www.mozilla.org/media/protocol/img/zaps/zap-16.fe39cc0d310d.svg",
+                "www.mozilla.org/media/protocol/img/zaps/zap-09.bc0c0b72fdaf.svg",
+                "www.mozilla.org/media/protocol/img/zaps/zap-10.3ec60d019421.svg",
+                "www.mozilla.org/media/protocol/img/icons/social/twitter/black.3c208dec394a.svg",
+                "www.mozilla.org/media/img/logos/social/mastodon-black.eda6d9fda842.svg",
+                "www.mozilla.org/media/protocol/img/icons/social/instagram/black.3145aa92e4bd.svg",
+                "www.mozilla.org/media/img/logos/social/linkedin-black.5cb4b3466aad.svg",
+                "www.mozilla.org/media/img/logos/social/tiktok-black.37a70992a8d0.svg",
+                "www.mozilla.org/media/img/logos/social/spotify-black.d525a374e3f5.svg",
+                "www.mozilla.org/media/protocol/img/icons/social/youtube/black.4676190b1a83.svg",
+                "trace.popin.cc/cs/msn",
+                "popin.cc/",
+                "www.mozilla.org/media/img/logos/edge/logo-edge.016a47a7fab3.png",
+                "www.googletagmanager.com/gtag/js",
+                "www.google-analytics.com/analytics.js",
+                "www.google-analytics.com/plugins/ua/linkid.js",
+                "mozilla.org/",
+                "www.mozilla.org/en-US/firefox/stub_attribution_code/",
+                "www.mozilla.org/media/img/firefox/new/desktop/features/one.a00c0790c101.svg",
+                "www.mozilla.org/media/img/firefox/new/desktop/features/two.bfc347fab404.svg",
+                "www.mozilla.org/media/img/firefox/new/desktop/features/oval-one.e4113dd8c0e7.svg",
+                "www.mozilla.org/media/img/firefox/new/desktop/features/oval-two.b7a43f0b20fa.svg",
+                "www.mozilla.org/media/img/firefox/new/desktop/features/rect-one.63fc8d035cbb.svg",
+                "www.mozilla.org/media/img/firefox/new/desktop/features/rect-two.87563558f61e.svg",
+                "www.mozilla.org/media/img/favicons/firefox/browser/favicon.f093404c0135.ico",
+                "www.mozilla.org/",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/common-segments.626a22fc4cc23ec96dc6.js",
+                "www.mozilla.org/en-US/firefox/download/thanks/",
+                "www.mozilla.org/media/css/protocol-call-out.8aa9401fb138.css",
+                "www.mozilla.org/media/css/firefox_desktop_download_thanks.296aca0a8dad.css",
+                "www.mozilla.org/media/js/firefox_new_thanks.d8e63bc283f0.js",
+                "www.mozilla.org/media/img/logos/windows/logo-windows-black.85f4165e8267.svg",
+                "sync.inmobi.com/oRTB",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/cs-core-desktop_libs_dist_design-system_border-radii_js-libs_weath",
+                "download.mozilla.org/",
+                "id5-sync.com/i/495/0.gif",
+                "stubdownloader.services.mozilla.com/",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/weather-card-wc.7c4f00c517f2860e70ec.js",
+                "cdn.stubdownloader.services.mozilla.com/builds/firefox-stub/en-US/win/ef5a2910edab879b9d22df3dbd331af666",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/autosMarketplaceCard.f4165dccc8c0801fe93c.js",
+                "cdn.stubdownloader.services.mozilla.com/builds/firefox-stub/en-US/win/ef5a2910edab879b9d22df3dbd331af666fa69b040641e1e053b2ea6ca113d26/Firefox%20Installer.exe",
+                "id5-sync.com/c/495/0/0/1.gif",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/libs_location-service_dist_AutoSuggestService_index_js-libs_traffi",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/traffic-card-wc.6e1eb018a66675770d55.js",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/digest-card.ea57997f3cb5abcff31a.js",
+                "img-s-msn-com.akamaized.net/tenant/amp/entityid/AAlj8sh",
+                "th.bing.com/th",
+                "img-s-msn-com.akamaized.net/tenant/amp/entityid/BBYyvk2",
+                "edgeassetservice.azureedge.net/assets/edge_hub_apps_action_center_maximal_light.png/1.2.3/asset",
+                "edgeassetservice.azureedge.net/assets/edge_hub_apps_search_maximal_light.png/1.3.8/asset",
+                "edgeassetservice.azureedge.net/assets/edge_hub_apps_shopping_maximal_light.png/1.5.3/asset",
+                "edgeassetservice.azureedge.net/assets/edge_hub_apps_toolbox_maximal_light.png/1.5.15/asset",
+                "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA13Q6AL.img",
+                "edgeassetservice.azureedge.net/assets/edge_hub_apps_games_maximal_light.png/1.7.4/asset",
+                "edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_light.png/1.7.35/asset",
+                "edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_light.png/1.10.2/asset",
+                "edgeassetservice.azureedge.net/assets/edge_hub_apps_edrop_maximal_light.png/1.1.14/asset",
+                "img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1cNeBp.img",
+                "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1jTWYk.img",
+                "img-s-msn-com.akamaized.net/tenant/amp/entityid/AAXI9D0.img",
+                "assets.msn.com/service/news/feed/pages/ntp",
+                "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA18wU7w.img",
+                "img-s-msn-com.akamaized.net/tenant/amp/entityid/AAb0FKk.img",
+                "img-s-msn-com.akamaized.net/tenant/amp/entityid/BBXhxD0.img",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/node_modules_sortablejs_modular_sortable_esm_js.883fee7723671fc5aa",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/common-fast-msft-web-components.b7d6ad484eaa7e3476b3.js",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/grid-view-feed.69e200aa47de5c78e323.js",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/libs_experiences-telemetry-data-mapper_dist_helpers_TelemetryObjec",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/libs_sports-data-service_dist_SportsDataMapper_js.04b5f973f6efea03",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/nas-highlight-v1.e54e4decbaf48c5bf2b3.js",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/libs_icons-wc_icons_ThumbDown_svg-libs_icons-wc_icons_ThumbDownFil",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/libs_super-feed_dist_feed-manager_FeedManagerWithClientAd_js-node_",
+                "assets.msn.com/",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/feedDependencies.b00d126340c597d2f1e4.js",
+                "assets.msn.com/content/v1/cms/api/amp/Document/BBIc9Ls",
+                "px.ads.linkedin.com/setuid",
+                "linkedin.com/",
+                "www.bing.com/",
+                "sync.outbrain.com/uidmappixel",
+                "assets.msn.com/content/v1/cms/api/amp/Document/BB14isyG",
+                "pr-bh.ybp.yahoo.com/sync/msn",
+                "assets.msn.com/content/v1/cms/api/amp/Document/AAzcXgM",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/nas-highlight-v3v4.e62b4100259626861160.js",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/nativeadstemplates.70411d026c7e047acae1.js",
+                "www.bing.com/th",
+                "r.bing.com/rp/lmu8EBCaPRMKtay8LSArGyY3mv4.br.js",
+                "r.bing.com/rs/7b/kq/jnc",
+                "r.bing.com/rp/FTmJMkisSOAwXdvbYo-M3c6924I.br.js",
+                "r.bing.com/rp/Lczar4f9BXKz-AZUtUwkDhnKzm0.br.js",
+                "bing.com/th",
+                "r.bing.com/rp/kVSuu2GgnGoU6zMv1zm7Dbh6pUw.br.css",
+                "www.bing.com/fd/ls/l",
+                "www.bing.com/rp/IvfoLO3XuUzsCyfv53CD-ckZU3s.br.js",
+                "www.bing.com/sa/simg/favicon-trans-bg-blue-mg-png.png",
+                "r.bing.com/rp/D-hEdXC7G-DgvV_tAK4BodWZ7no.png",
+                "r.bing.com/rp/HbkPYqcLh_xqZSd1KqLTrWN8MYY.br.js",
+                "r.bing.com/rp/hkXWsTcGTHs44QxzZyThd4fbbPM.br.js",
+                "r.bing.com/rp/-8B2JlFI9HgFcgp0RGJHcPQD2GM.br.js",
+                "r.bing.com/rp/C-2rpfLKDHy4aQxex3ShhgSO_OM.br.js",
+                "r.bing.com/rp/ZDuP1RxmIvW4zmuvz53att_oXdo.br.js",
+                "r.bing.com/rp/6slp3E-BqFf904Cz6cCWPY1bh9E.br.js",
+                "r.bing.com/rp/H98Meq6f86N5zkOjRPVOIPIr5pE.br.js",
+                "r.bing.com/rp/SDeE6NKJQCkfNK6cB0GHg-KiEns.br.js",
+                "r.bing.com/rp/O7fNg96R1_CsQZshpnEC3v_JCPI.br.js",
+                "r.bing.com/rp/7fEdNSXLMWxUxQ1SVSMGfOMYvxY.br.js",
+                "r.bing.com/rp/xrUJJ8sN8ucbiFbMJle3n0IfRwU.br.js",
+                "r.bing.com/rp/LXu4eYVt3NhFk3Ud9ZbhZ_PYFaA.br.js",
+                "r.bing.com/rp/JXkjDPywJD9oeuWPLy7bD8Jc6mw.br.js",
+                "r.bing.com/rp/ilbkF5vv0sk3tJ8LDY0Nm39p12g.br.js",
+                "r.bing.com/rp/R14ozkkie30zM6FSjzwWFp8Ffzk.br.js",
+                "r.bing.com/rp/MjkKTrIX9w2UKVd1W1WV1Gj2zWM.br.js",
+                "r.bing.com/rp/Gyuq2bqitqDJM0BeAkbKXGlQXNw.br.js",
+                "r.bing.com/rp/n21aGRCN5EKHB3qObygw029dyNU.br.js",
+                "r.bing.com/rp/8CgcSSLayxEVUBf0swP_bQGMId8.br.js",
+                "r.bing.com/rp/V_fBQ_iVmAgE_Ta_T-6BNXc0ZY4.br.js",
+                "r.bing.com/rp/C7TuoP5bfHv-CZlMHZy7yfvI4Fk.br.js",
+                "r.bing.com/rp/XJ8OmILbNhm0zU9tdkuGYeXVPRQ.br.js",
+                "r.bing.com/rp/gKwIRAF4fg7noG1zyeUz8x3Jdhc.br.js",
+                "r.bing.com/rp/9cuwOQ_qE7qTGKohzrf_gIjTlPI.br.js",
+                "r.bing.com/rp/Gw7eETSwe7GHmKwW1lRqGPQJXRo.br.js",
+                "r.bing.com/rp/0IsYKSwwm5FfLJloF96TVqP7I84.br.js",
+                "r.bing.com/rs/7b/x6/nj/V9Lbi4rGakA-OjwcLcoh5jr1zfY.js",
+                "r.bing.com/rp/OFc1_3z9AF9sE0FyaZ2URvDI8JI.br.js",
+                "r.bing.com/rp/FETIIg2L7hzQ9SoR9Kg40TQiXAc.br.js",
+                "r.bing.com/rp/K_V1CARn2Q2lTs5njJKUvUkHyi4.br.js",
+                "wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js",
+                "edgestatic.azureedge.net/shared/edgeweb/img/arrow-left.a26976f.svg",
+                "edgestatic.azureedge.net/shared/edgeweb/img/arrow-right.654b408.svg",
+                "r.bing.com/rp/JJUoNR9AIuJ1E79GNdLXKItzr4Y.br.js",
+                "www.bing.com/AS/Suggestions",
+                "www.bing.com/images/sbi",
+                "www.bing.com/hp/api/v1/codexnudge",
+                "www.bing.com/rp/ZqcguoCiF8MOwMO7koYG5q3zX2A.png",
+                "www.bing.com/rp/cj6w0DX8V1VVlRTS_G7PdLHOKsQ.png",
+                "www.bing.com/hp/api/model",
+                "assets.msn.com/bundles/v1/bingHomepage/latest/widget-initializer.js",
+                "www.bing.com/sa/simg/Roboto_Regular.woff2",
+                "www.bing.com/sa/simg/Roboto_Semibold.woff2",
+                "www.bing.com/notifications/render",
+                "r.bing.com/rp/4-b0WnMTXP-gFzXHw0vjuAWCOPk.br.css",
+                "r.bing.com/rp/NLTwbkpTJpMHGkXVdaW9OppjTiw.br.css",
+                "r.bing.com/rp/PZ76sazggYnBmuarZgy-_W550X8.br.js",
+                "r.bing.com/rp/s3ydRDPqMugP_EjrunOTC4bo_Ac.br.js",
+                "r.bing.com/rp/1BD4shj-pYkAhF3p2hEOgHUx2FQ.br.js",
+                "r.bing.com/rp/OEuAD-wfCz5nK288ObdzAdFH-iU.br.js",
+                "r.bing.com/rp/IdYT2Zd3XscGORykClHulJlaUlw.png",
+                "www.bing.com/fd/ls/GLinkPing.aspx",
+                "r.bing.com/rp/c4ruj6QGsmSnOG64gJJnnnYDa44.br.css",
+                "r.bing.com/rp/5-y8FBmAkXLBZZghI-X94CRnsqg.br.css",
+                "r.bing.com/rp/WRGhsWGnkf3ko69VafMSpLBwgbk.br.css",
+                "r.bing.com/rp/2DP_XqmIF8oInMGjMnxM36UXY0Q.br.css",
+                "r.bing.com/rp/SQJFanoR_oiYec8uii4GG7LKg2o.br.js",
+                "r.bing.com/rp/V-eN3xa_9CBLDYyND2ik2LPwz-o.svg",
+                "www.bing.com/qbox",
+                "r.bing.com/rp/6zg86aHGTXWfySoaJQRqV18s0QQ.br.css",
+                "www.bing.com/rp/fHZP5vAMq4BYyuujjrdIIIijePQ.png",
+                "www.bing.com/rp/mQ1jqL6pz-ujeaitVodQ9e3qew0.png",
+                "r.bing.com/rb/H/cir3",
+                "www.bing.com/sdch/dictionary/search_en_us/IO2Fcb1c",
+                "www.bing.com/geolocation/write",
+                "r.bing.com/rp/Y26LIcmRz0EdnBtSjtN2P4pbrp4.br.js",
+                "r.bing.com/rp/0qo7e16hAJuKr67fZ-dKtNlvtjg.br.js",
+                "r.bing.com/rp/3XgE2MtuwnejDNaa3BrmuQ8ABI8.br.js",
+                "r.bing.com/rs/7b/j2/jnc",
+                "r.bing.com/rp/4qLYPfN0EmVUH2TIgYLmYcXKYtQ.br.js",
+                "r.bing.com/rp/2DP4HPIfaNQ7pkpsKIkpRa3DF6Y.br.js",
+                "r.bing.com/rp/A8TgFKHtB07SYRtYie15tvHtiqY.br.js",
+                "r.bing.com/rp/lLk8XmbdNzzlnPRzVzDhaF9yjqw.br.js",
+                "r.bing.com/rp/qi9FYI6I1UoBJBF7vnl-c21ZF8w.br.js",
+                "r.bing.com/rp/hcAzGBxfE9oRVAA1rPm7ah7lmms.br.js",
+                "r.bing.com/rp/9xGNA8UskvA9WHF58zbLOHZ5HvI.br.js",
+                "r.bing.com/rp/bRCkl84vXs7Ndg2yyBzYr2eVQIg.br.js",
+                "r.bing.com/rp/GSNeCa5XvtoP6jz0k5V172vRaQ8.br.js",
+                "r.bing.com/rp/3US3nNU_RgsSNFm9Bzw6xgeuOHk.br.js",
+                "r.bing.com/rp/NfTD8Ovh04Y_Ni14YxqYB8R_2_Q.br.js",
+                "r.bing.com/rp/fRSNKQanUHk53F1a1Bi8UA71Qt4.br.js",
+                "r.bing.com/rp/6mZmj1db42G_jniFgdT7MCvBgyA.br.js",
+                "r.bing.com/rp/JigriHckblqcu1XwKpT4wumVS2k.br.js",
+                "r.bing.com/rp/UftfQbYuKvGGEUHPU3QGHYd90Z8.br.js",
+                "r.bing.com/rp/06bQtOdvnqIODKnOBKJedLV7FUg.br.js",
+                "r.bing.com/rp/zlfm-hC70pZAs62UVTTl3KShKOE.br.js",
+                "r.bing.com/rp/EcPZJcvBpS1TWE_YYG-PcTqlkRQ.br.js",
+                "r.bing.com/rp/5FbVcVko_TuW5Y8VB4_bHoFuDm8.br.js",
+                "r.bing.com/rp/-x0MSzOQCe3hvplYh7ak1IGwIZs.br.js",
+                "r.bing.com/rp/EmbwE8rah_7zdUQkosWSw-5nAPY.br.js",
+                "r.bing.com/rp/uisvzjZ4fXjpFRgCfnfjmS4U4aA.br.js",
+                "r.bing.com/rp/yOU5_vGeE7HIs09fec6ZV9prLO4.br.js",
+                "r.bing.com/rp/vu0bslOwQHUGRzaMOU7IekYpE0I.br.js",
+                "r.bing.com/rp/fCJX-w0lvO4cxIzvTihVaRXd8hE.br.js",
+                "r.bing.com/rp/nc60aT-MXWFDGmlflZLjNBVVxkM.br.js",
+                "r.bing.com/rp/CcMXS8Oo0OUnUE0LzYK9AFJ6la8.br.js",
+                "r.bing.com/rp/uP67zbZbUB4EF9kyMx0mhlm79lw.br.js",
+                "r.bing.com/rp/X1Cjkakv1epBOGfkIjYblQJvweU.br.js",
+                "r.bing.com/rp/owNYbZFYWGN-GrVLz5gXKSiYUW4.br.js",
+                "r.bing.com/rp/ac0si7-jRRg7fGLyaXMYocX1U40.br.js",
+                "r.bing.com/rp/2pI-3yxS71qnL6vzhVIltDQouTg.br.js",
+                "r.bing.com/rp/wNhUjm3kl_kvyfrio44J6j1zdYo.br.js",
+                "r.bing.com/rp/WjLJz0ZZ3W6qclUa_RsS6VdZFzE.br.js",
+                "r.bing.com/rp/QGgDCAP4Fmzft4oE0wUK8k18tLI.br.js",
+                "r.bing.com/rp/BDwYWcRQC1NNdqbnczZFTEPNiGk.br.js",
+                "r.bing.com/rp/t5vZ9VqTO-Sl4hN969ySbvZgV0g.br.js",
+                "r.bing.com/rp/RvRBoZ5KQDNHwbHfo-_ZBZIoYQo.br.js",
+                "r.bing.com/rp/ml6tcUb8Ta5kBuZXGzDE3tFty0g.br.js",
+                "r.bing.com/rp/9tfFg6vO9uS7FxceSoXBYqA1DZY.br.js",
+                "r.bing.com/rp/HwXY4ae-0LbNIa2sHcj2Z3DKJlE.br.js",
+                "r.bing.com/rp/4RUiOcmOi-yBMR4tQaaqAG5d5us.br.js",
+                "r.bing.com/rp/BlTioeDsWnYvy2P--9OEmBraoOs.br.js",
+                "r.bing.com/rp/1Fv2ZQvZTbMVx7KoU_6WkFwvTJ4.br.js",
+                "r.bing.com/rp/y1tiMssL1_ZRGIkBjxDYmR2kX8o.br.js",
+                "r.bing.com/rp/8w26ODmd1hk4C30WJtfkdBYFSfE.br.js",
+                "r.bing.com/rp/VJnSxYcv7TZB-im7xvuwo7wcIGs.br.js",
+                "r.bing.com/rp/PrQ373ob8GVFmIUI5rk5UyOqdPQ.br.js",
+                "r.bing.com/rp/IEsUJAq41KbrXKW7f2nmdJPCUXs.br.js",
+                "r.bing.com/rs/7b/t2/jnc",
+                "r.bing.com/rp/5S4e_l2wpLofAsoMy4CSQCVPRho.br.js",
+                "r.bing.com/rp/GqYH8DiByBiZCqVusTrTXFQNN9Q.br.js",
+                "r.bing.com/rp/z2dAP6NRI-oD0zBNaTUoppVXDNo.br.js",
+                "r.bing.com/rp/Xs0bcRwli50H_9_TOsfurmNnZ64.br.js",
+                "r.bing.com/rp/uiannz55FdT0j3p9jGwegfI5aIY.br.js",
+                "r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js",
+                "r.bing.com/rp/ID-70CBAEOXh6Nwxga-CxgpUq4k.br.js",
+                "r.bing.com/rp/4ZdovUOtRqb58WWDaWm5ExfObls.br.js",
+                "r.bing.com/rp/NbA_o5_JH0GEi8eQ-UOtARHo4pE.svg",
+                "r.bing.com/rp/Dl3Mgy5b8mZk0rO25YbvLM3bp7Q.svg",
+                "r.bing.com/rp/dLtBV4YNQwZE782_Om7v0nqU1bY.svg",
+                "r.bing.com/rp/I0oqL6KlxQg6fTOUf0zgtDXii0M.svg",
+                "r.bing.com/rp/2Ro4LD_2OaiuqUlZYlpozEd7Bf0.svg",
+                "www.bing.com/sa/simg/favicon-trans-bg-blue-mg.ico",
+                "edgeassetservice.azureedge.net/assets/product_category_en/1.0.0/asset",
+                "r.bing.com/rp/hx1FP91l4PKrDhCLfXHf3ouMwSg.br.js",
+                "r.bing.com/rp/ulJ3ckR0YcGpvIX6xhO4prJhEQQ.br.js",
+                "r.bing.com/rp/fdVZU4ttbw8NDRm6H3I5BW3_vCo.svg",
+                "r.bing.com/rp/4L4QdyjTv0HYE2Ig2ol9eYoqxg8.svg",
+                "r.bing.com/rp/Fsa_OI0AplCnVoXGca8ALOo0S0s.svg",
+                "r.bing.com/rp/UYtUYDcn1oZlFG-YfBPz59zejYI.svg",
+                "r.bing.com/rp/kiGH9ukZK6Q4hvtDtwwVc1yvueg.svg",
+                "r.bing.com/rp/KC_nX2_tPPyFvVw1RK20Yu1FyDk.svg",
+                "r.bing.com/rp/NnFHhz2jL6yzChtIhaB5IIVKY5k.svg",
+                "r.bing.com/rp/hx-eea1zqtCz4K0bW2uH_oN7Fs4.jpg",
+                "r.bing.com/rp/95z5wMy4UcfbSSSlSw780vQ5jKA.jpg",
+                "r.bing.com/rp/GJDmKr3_TS3Qpm6KEL9UKUQKUO4.jpg",
+                "r.bing.com/rp/ln5TQq6AIWfcBlduDk-5bnaJMpY.jpg",
+                "r.bing.com/rp/dbmNS45xQvD1diApY1T2HExvOo8.jpg",
+                "r.bing.com/rp/cfeVf2-uV0hUo3ToTbLjztuomWk.jpg",
+                "r.bing.com/rp/lvCKZ07bEYtoYmY62ifMzVa0RIE.jpg",
+                "r.bing.com/rp/ni3MyKKVu9pK0SgY6gb6Z2NOGpg.jpg",
+                "login.microsoftonline.com/",
+                "bing.com",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/background-gallery.d44590df05647049bc99.js",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/boost-ad-card.b420d4e325dc8c2cbae5.js",
+                "login.live.com/oauth20_desktop.srf",
+                "login.live.com/oauth20_logout.srf",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/card-actions-wc.be2a2750fc9361056238.js",
+                "msn.com/edge",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/channel-filter-card.bc572f7087cb851630b6.js",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/channel-store.c6dbc0f699354219c82e.js",
+                "assets.msn.com/bundles/v1/edgeChromium/latest/codex-bing-chat.b89d64d8342ec31ca7b9.js",
+                "login.live.com/oauth20_authorize.srf",
+                "windows.msn.com/",
+                "windows.msn.com/staticsb/statics/latest/fixed/CloudConfigs/WindowsDashboard/ClientApp/wdgts_conf.json",
+                "api.msn.com/auth/cookie",
+                "api.msn.com/",
+                "assets.msn.com/service/news/feed/pages/dashboard4",
+                "assets.msn.com/service/news/feed/pages",
+                "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1g7bhz.img",
+                "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA13slaS.img",
+                "assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/Haze.svg",
+                "assets.msn.com/weathermapdata/1/static/background/v2.0/jpg/hazy_day.jpg",
+                "assets.msn.com/staticsb/statics/latest/icons-wc/icons/TrendingLight.svg",
+                "assets.msn.com/service/Finance/Charts",
+                "assets.msn.com/weathermapdata/1/static/weather/Icons/KRYFGAA=/Condition/AAehYNC.png",
+                "www.mozilla.org/privacy/firefox/",
+                "www.mozilla.org/en-US/privacy/firefox/",
+                "google.com/",
+                "www.google.com/",
+                "ogs.google.com/",
+                "www.google.com/search",
+                "google.com/verify",
+                "www.w3schools.com/sql/sql_injection.asp",
+                "w3schools.com/",
+                "www.w3schools.com/"
+            ],
+            "triggers": [
+                "next"
+            ],
+            "transitions": [
+                {
+                    "trigger": "next",
+                    "source": "adnxs.com/",
+                    "dest": "download.mozilla.org/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "adnxs.com/",
+                    "dest": "r3.i.lencr.org/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "api.msn.com/",
+                    "dest": "assets.msn.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "api.msn.com/auth/cookie",
+                    "dest": "api.msn.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "apps.identrust.com/roots/dstrootcax3.p7c",
+                    "dest": "msn.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/feedDependencies.b00d126340c597d2f1e4.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/",
+                    "dest": "assets.msn.com/service/news/feed/pages/dashboard4"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/bingHomepage/latest/widget-initializer.js",
+                    "dest": "bing.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/autosMarketplaceCard.f4165dccc8c0801fe93c.js",
+                    "dest": "cdn.stubdownloader.services.mozilla.com/builds/firefox-stub/en-US/win/ef5a2910edab879b9d22df3dbd331af666fa69b040641e1e053b2ea6ca113d26/Firefox%20Installer.exe"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/background-gallery.d44590df05647049bc99.js",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/boost-ad-card.b420d4e325dc8c2cbae5.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/boost-ad-card.b420d4e325dc8c2cbae5.js",
+                    "dest": "login.live.com/oauth20_desktop.srf"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/card-actions-wc.be2a2750fc9361056238.js",
+                    "dest": "msn.com/edge"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/card-actions-wc.be2a2750fc9361056238.js",
+                    "dest": "trace.mediago.io/cs/msn"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/channel-filter-card.bc572f7087cb851630b6.js",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/channel-store.c6dbc0f699354219c82e.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/channel-store.c6dbc0f699354219c82e.js",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/codex-bing-chat.b89d64d8342ec31ca7b9.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/codex-bing-chat.b89d64d8342ec31ca7b9.js",
+                    "dest": "login.live.com/oauth20_authorize.srf"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/common-fast-msft-web-components.b7d6ad484eaa7e3476b3.js",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/grid-view-feed.69e200aa47de5c78e323.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/common-segments.626a22fc4cc23ec96dc6.js",
+                    "dest": "www.mozilla.org/en-US/firefox/download/thanks/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/cs-core-desktop_libs_dist_design-system_border-radii_js-libs_weath",
+                    "dest": "adnxs.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/digest-card.ea57997f3cb5abcff31a.js",
+                    "dest": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AAlj8sh"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/feedDependencies.b00d126340c597d2f1e4.js",
+                    "dest": "assets.msn.com/content/v1/cms/api/amp/Document/BBIc9Ls"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/grid-view-feed.69e200aa47de5c78e323.js",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/libs_experiences-telemetry-data-mapper_dist_helpers_TelemetryObjec"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/libs_experiences-telemetry-data-mapper_dist_helpers_TelemetryObjec",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/libs_sports-data-service_dist_SportsDataMapper_js.04b5f973f6efea03"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/libs_icons-wc_icons_ThumbDown_svg-libs_icons-wc_icons_ThumbDownFil",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/libs_super-feed_dist_feed-manager_FeedManagerWithClientAd_js-node_"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/libs_location-service_dist_AutoSuggestService_index_js-libs_traffi",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/traffic-card-wc.6e1eb018a66675770d55.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/libs_sports-data-service_dist_SportsDataMapper_js.04b5f973f6efea03",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/nas-highlight-v1.e54e4decbaf48c5bf2b3.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/libs_super-feed_dist_feed-manager_FeedManagerWithClientAd_js-node_",
+                    "dest": "assets.msn.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/nas-highlight-v1.e54e4decbaf48c5bf2b3.js",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/libs_icons-wc_icons_ThumbDown_svg-libs_icons-wc_icons_ThumbDownFil"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/nas-highlight-v3v4.e62b4100259626861160.js",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/nativeadstemplates.70411d026c7e047acae1.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/nativeadstemplates.70411d026c7e047acae1.js",
+                    "dest": "bing.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/node_modules_sortablejs_modular_sortable_esm_js.883fee7723671fc5aa",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/common-fast-msft-web-components.b7d6ad484eaa7e3476b3.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/traffic-card-wc.6e1eb018a66675770d55.js",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/digest-card.ea57997f3cb5abcff31a.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/bundles/v1/edgeChromium/latest/weather-card-wc.7c4f00c517f2860e70ec.js",
+                    "dest": "cdn.stubdownloader.services.mozilla.com/builds/firefox-stub/en-US/win/ef5a2910edab879b9d22df3dbd331af666"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/content/v1/cms/api/amp/Document/AAzcXgM",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/nas-highlight-v3v4.e62b4100259626861160.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/content/v1/cms/api/amp/Document/BB14isyG",
+                    "dest": "pr-bh.ybp.yahoo.com/sync/msn"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/content/v1/cms/api/amp/Document/BBIc9Ls",
+                    "dest": "px.ads.linkedin.com/setuid"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/content/v1/cms/api/amp/Document/BBZpYX5",
+                    "dest": "www2.bing.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/service/Finance/Charts",
+                    "dest": "assets.msn.com/weathermapdata/1/static/weather/Icons/KRYFGAA=/Condition/AAehYNC.png"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/service/news/feed/pages",
+                    "dest": "th.bing.com/th"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/service/news/feed/pages/dashboard4",
+                    "dest": "msn.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/service/news/feed/pages/ntp",
+                    "dest": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA18wU7w.img"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/staticsb/statics/latest/icons-wc/icons/TrendingLight.svg",
+                    "dest": "assets.msn.com/service/Finance/Charts"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/weathermapdata/1/static/background/v2.0/jpg/hazy_day.jpg",
+                    "dest": "assets.msn.com/staticsb/statics/latest/icons-wc/icons/TrendingLight.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/weathermapdata/1/static/weather/Icons/KRYFGAA=/Condition/AAehYNC.png",
+                    "dest": "www.mozilla.org/privacy/firefox/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/Haze.svg",
+                    "dest": "assets.msn.com/weathermapdata/1/static/background/v2.0/jpg/hazy_day.jpg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com",
+                    "dest": "www.bing.com/fd/ls/l"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com/",
+                    "dest": "login.microsoftonline.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com/",
+                    "dest": "ntp.msn.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com/",
+                    "dest": "sync.outbrain.com/uidmappixel"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com/",
+                    "dest": "th.bing.com/th"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com/",
+                    "dest": "www.bing.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com/",
+                    "dest": "www.bing.com/AS/Suggestions"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com/",
+                    "dest": "www.bing.com/ck/a"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com/",
+                    "dest": "www.bing.com/fd/ls/l"
+                },
+                {
+                    "trigger": "next",
+                    "source": "bing.com/th",
+                    "dest": "r.bing.com/rp/kVSuu2GgnGoU6zMv1zm7Dbh6pUw.br.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "cdn.stubdownloader.services.mozilla.com/builds/firefox-stub/en-US/win/ef5a2910edab879b9d22df3dbd331af666",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/autosMarketplaceCard.f4165dccc8c0801fe93c.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "cdn.stubdownloader.services.mozilla.com/builds/firefox-stub/en-US/win/ef5a2910edab879b9d22df3dbd331af666fa69b040641e1e053b2ea6ca113d26/Firefox%20Installer.exe",
+                    "dest": "download.mozilla.org/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "download.mozilla.org/",
+                    "dest": "id5-sync.com/i/495/0.gif"
+                },
+                {
+                    "trigger": "next",
+                    "source": "download.mozilla.org/",
+                    "dest": "stubdownloader.services.mozilla.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edge.microsoft.com/entityextractiontemplates/api/v1/assets/find-assets",
+                    "dest": "msn.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edge.microsoft.com/entityextractiontemplates/api/v1/assets/find-assets",
+                    "dest": "www.bing.com/fd/ls/l"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgeassetservice.azureedge.net/assets/domains_config_gz/3.0.5/asset",
+                    "dest": "ntp.msn.com/bundles/v1/edgeChromium/latest/web-worker.a1e7085adc01f64a7777.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_light.png/1.7.35/asset",
+                    "dest": "edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_light.png/1.10.2/asset"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgeassetservice.azureedge.net/assets/edge_hub_apps_action_center_maximal_light.png/1.2.3/asset",
+                    "dest": "edgeassetservice.azureedge.net/assets/edge_hub_apps_search_maximal_light.png/1.3.8/asset"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgeassetservice.azureedge.net/assets/edge_hub_apps_edrop_maximal_light.png/1.1.14/asset",
+                    "dest": "img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1cNeBp.img"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgeassetservice.azureedge.net/assets/edge_hub_apps_games_maximal_light.png/1.7.4/asset",
+                    "dest": "edgeassetservice.azureedge.net/assets/edge_hub_apps_M365_light.png/1.7.35/asset"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgeassetservice.azureedge.net/assets/edge_hub_apps_outlook_light.png/1.10.2/asset",
+                    "dest": "edgeassetservice.azureedge.net/assets/edge_hub_apps_edrop_maximal_light.png/1.1.14/asset"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgeassetservice.azureedge.net/assets/edge_hub_apps_search_maximal_light.png/1.3.8/asset",
+                    "dest": "edgeassetservice.azureedge.net/assets/edge_hub_apps_shopping_maximal_light.png/1.5.3/asset"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgeassetservice.azureedge.net/assets/edge_hub_apps_shopping_maximal_light.png/1.5.3/asset",
+                    "dest": "edgeassetservice.azureedge.net/assets/edge_hub_apps_toolbox_maximal_light.png/1.5.15/asset"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgeassetservice.azureedge.net/assets/edge_hub_apps_toolbox_maximal_light.png/1.5.15/asset",
+                    "dest": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA13Q6AL.img"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgeassetservice.azureedge.net/assets/product_category_en/1.0.0/asset",
+                    "dest": "www.bing.com/images/sbi"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/cms/lrs1c69a1j/logos/5a74283229e24d0ca59fb94ed941c3a0.png",
+                    "dest": "msn.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/035bac1.js",
+                    "dest": "edgestatic.azureedge.net/shared/cms/lrs1c69a1j/logos/5a74283229e24d0ca59fb94ed941c3a0.png"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/1a5a217.js",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/565e170.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/1fb2008.js",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/1a5a217.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/264b7f5.js",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/cee86ed.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/565e170.js",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/264b7f5.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/622dd1f.js",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/e723d85.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/cee86ed.js",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/035bac1.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/css/0045370.css",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/css/676e4a6.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/css/0295ecc.css",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/css/abea44a.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/css/069d68d.css",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/fc015a7.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/css/2c1a379.css",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/css/63e3356.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/css/63e3356.css",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/css/c2ff623.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/css/676e4a6.css",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/css/2c1a379.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/css/abea44a.css",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/css/0045370.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/css/c2ff623.css",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/css/069d68d.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/e723d85.js",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/css/0295ecc.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/fbf5b3f.js",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/1fb2008.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/fc015a7.js",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/fbf5b3f.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/img/arrow-left.a26976f.svg",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/img/arrow-right.654b408.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "edgestatic.azureedge.net/shared/edgeweb/img/arrow-right.654b408.svg",
+                    "dest": "r.bing.com/rp/JJUoNR9AIuJ1E79GNdLXKItzr4Y.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "go.microsoft.com/fwlink/",
+                    "dest": "www.microsoft.com/edge/welcome"
+                },
+                {
+                    "trigger": "next",
+                    "source": "google.com/",
+                    "dest": "google.com/verify"
+                },
+                {
+                    "trigger": "next",
+                    "source": "google.com/",
+                    "dest": "ogs.google.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "google.com/",
+                    "dest": "www.google.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "google.com/",
+                    "dest": "www.w3schools.com/sql/sql_injection.asp"
+                },
+                {
+                    "trigger": "next",
+                    "source": "google.com/verify",
+                    "dest": "google.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "google.com/verify",
+                    "dest": "www.google.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "id5-sync.com/c/495/0/0/1.gif",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/libs_location-service_dist_AutoSuggestService_index_js-libs_traffi"
+                },
+                {
+                    "trigger": "next",
+                    "source": "id5-sync.com/i/495/0.gif",
+                    "dest": "stubdownloader.services.mozilla.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA13Q6AL.img",
+                    "dest": "edgeassetservice.azureedge.net/assets/edge_hub_apps_games_maximal_light.png/1.7.4/asset"
+                },
+                {
+                    "trigger": "next",
+                    "source": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA13slaS.img",
+                    "dest": "assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/Haze.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA18wU7w.img",
+                    "dest": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AAb0FKk.img"
+                },
+                {
+                    "trigger": "next",
+                    "source": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1g7bhz.img",
+                    "dest": "th.bing.com/th"
+                },
+                {
+                    "trigger": "next",
+                    "source": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1jTWYk.img",
+                    "dest": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AAXI9D0.img"
+                },
+                {
+                    "trigger": "next",
+                    "source": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AAXI9D0.img",
+                    "dest": "assets.msn.com/service/news/feed/pages/ntp"
+                },
+                {
+                    "trigger": "next",
+                    "source": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AAb0FKk.img",
+                    "dest": "img-s-msn-com.akamaized.net/tenant/amp/entityid/BBXhxD0.img"
+                },
+                {
+                    "trigger": "next",
+                    "source": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AAlj8sh",
+                    "dest": "th.bing.com/th"
+                },
+                {
+                    "trigger": "next",
+                    "source": "img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1cNeBp.img",
+                    "dest": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1jTWYk.img"
+                },
+                {
+                    "trigger": "next",
+                    "source": "img-s-msn-com.akamaized.net/tenant/amp/entityid/BBXhxD0.img",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/node_modules_sortablejs_modular_sortable_esm_js.883fee7723671fc5aa"
+                },
+                {
+                    "trigger": "next",
+                    "source": "img-s-msn-com.akamaized.net/tenant/amp/entityid/BBYyvk2",
+                    "dest": "edgeassetservice.azureedge.net/assets/edge_hub_apps_action_center_maximal_light.png/1.2.3/asset"
+                },
+                {
+                    "trigger": "next",
+                    "source": "linkedin.com/",
+                    "dest": "bing.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "login.live.com/oauth20_authorize.srf",
+                    "dest": "mozilla.org/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "login.live.com/oauth20_desktop.srf",
+                    "dest": "login.live.com/oauth20_logout.srf"
+                },
+                {
+                    "trigger": "next",
+                    "source": "login.live.com/oauth20_logout.srf",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/card-actions-wc.be2a2750fc9361056238.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "login.microsoftonline.com/",
+                    "dest": "www.bing.com/fd/ls/l"
+                },
+                {
+                    "trigger": "next",
+                    "source": "mediago.io/",
+                    "dest": "www.bing.com/ck/a"
+                },
+                {
+                    "trigger": "next",
+                    "source": "mozilla.org/",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/cs-core-desktop_libs_dist_design-system_border-radii_js-libs_weath"
+                },
+                {
+                    "trigger": "next",
+                    "source": "mozilla.org/",
+                    "dest": "bing.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "mozilla.org/",
+                    "dest": "www.mozilla.org/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "mozilla.org/",
+                    "dest": "www.mozilla.org/en-US/firefox/stub_attribution_code/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "msn.com/",
+                    "dest": "assets.msn.com/content/v1/cms/api/amp/Document/BBZpYX5"
+                },
+                {
+                    "trigger": "next",
+                    "source": "msn.com/",
+                    "dest": "assets.msn.com/service/news/feed/pages"
+                },
+                {
+                    "trigger": "next",
+                    "source": "msn.com/",
+                    "dest": "ntp.msn.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "msn.com/",
+                    "dest": "ntp.msn.com/bundles/v1/edgeChromium/latest/SSR-extension.3665564e43732e273662.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "msn.com/edge",
+                    "dest": "ntp.msn.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com/",
+                    "dest": "bing.com"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com/",
+                    "dest": "bing.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com/",
+                    "dest": "msn.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com/",
+                    "dest": "ntp.msn.com/edge/ntp/service-worker.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com/bundles/v1/edgeChromium/latest/SSR-extension.3665564e43732e273662.js",
+                    "dest": "edgeassetservice.azureedge.net/assets/domains_config_gz/3.0.5/asset"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com/bundles/v1/edgeChromium/latest/web-worker.a1e7085adc01f64a7777.js",
+                    "dest": "www.microsoft.com/en-us/edge/welcome"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ntp.msn.com/edge/ntp/service-worker.js",
+                    "dest": "x1.i.lencr.org/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "ogs.google.com/",
+                    "dest": "www.google.com/search"
+                },
+                {
+                    "trigger": "next",
+                    "source": "popin.cc/",
+                    "dest": "www.mozilla.org/media/img/logos/edge/logo-edge.016a47a7fab3.png"
+                },
+                {
+                    "trigger": "next",
+                    "source": "pr-bh.ybp.yahoo.com/sync/msn",
+                    "dest": "assets.msn.com/content/v1/cms/api/amp/Document/AAzcXgM"
+                },
+                {
+                    "trigger": "next",
+                    "source": "px.ads.linkedin.com/setuid",
+                    "dest": "linkedin.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rb/H/cir3",
+                    "dest": "www.bing.com/sdch/dictionary/search_en_us/IO2Fcb1c"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/-8B2JlFI9HgFcgp0RGJHcPQD2GM.br.js",
+                    "dest": "r.bing.com/rp/C-2rpfLKDHy4aQxex3ShhgSO_OM.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/-x0MSzOQCe3hvplYh7ak1IGwIZs.br.js",
+                    "dest": "r.bing.com/rp/EmbwE8rah_7zdUQkosWSw-5nAPY.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/06bQtOdvnqIODKnOBKJedLV7FUg.br.js",
+                    "dest": "r.bing.com/rp/zlfm-hC70pZAs62UVTTl3KShKOE.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/0IsYKSwwm5FfLJloF96TVqP7I84.br.js",
+                    "dest": "r.bing.com/rs/7b/x6/nj/V9Lbi4rGakA-OjwcLcoh5jr1zfY.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/0qo7e16hAJuKr67fZ-dKtNlvtjg.br.js",
+                    "dest": "r.bing.com/rp/3XgE2MtuwnejDNaa3BrmuQ8ABI8.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/1BD4shj-pYkAhF3p2hEOgHUx2FQ.br.js",
+                    "dest": "www.bing.com/AS/Suggestions"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/1Fv2ZQvZTbMVx7KoU_6WkFwvTJ4.br.js",
+                    "dest": "r.bing.com/rp/y1tiMssL1_ZRGIkBjxDYmR2kX8o.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/2DP4HPIfaNQ7pkpsKIkpRa3DF6Y.br.js",
+                    "dest": "r.bing.com/rp/A8TgFKHtB07SYRtYie15tvHtiqY.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/2DP_XqmIF8oInMGjMnxM36UXY0Q.br.css",
+                    "dest": "r.bing.com/rp/SQJFanoR_oiYec8uii4GG7LKg2o.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/2Ro4LD_2OaiuqUlZYlpozEd7Bf0.svg",
+                    "dest": "th.bing.com/th"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/2pI-3yxS71qnL6vzhVIltDQouTg.br.js",
+                    "dest": "r.bing.com/rp/wNhUjm3kl_kvyfrio44J6j1zdYo.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/3US3nNU_RgsSNFm9Bzw6xgeuOHk.br.js",
+                    "dest": "r.bing.com/rp/NfTD8Ovh04Y_Ni14YxqYB8R_2_Q.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/3XgE2MtuwnejDNaa3BrmuQ8ABI8.br.js",
+                    "dest": "r.bing.com/rs/7b/j2/jnc"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/4-b0WnMTXP-gFzXHw0vjuAWCOPk.br.css",
+                    "dest": "r.bing.com/rp/NLTwbkpTJpMHGkXVdaW9OppjTiw.br.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/4L4QdyjTv0HYE2Ig2ol9eYoqxg8.svg",
+                    "dest": "r.bing.com/rp/Fsa_OI0AplCnVoXGca8ALOo0S0s.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/4RUiOcmOi-yBMR4tQaaqAG5d5us.br.js",
+                    "dest": "r.bing.com/rp/BlTioeDsWnYvy2P--9OEmBraoOs.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/4ZdovUOtRqb58WWDaWm5ExfObls.br.js",
+                    "dest": "www.bing.com/fd/ls/l"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/4qLYPfN0EmVUH2TIgYLmYcXKYtQ.br.js",
+                    "dest": "r.bing.com/rp/2DP4HPIfaNQ7pkpsKIkpRa3DF6Y.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/5-y8FBmAkXLBZZghI-X94CRnsqg.br.css",
+                    "dest": "r.bing.com/rp/WRGhsWGnkf3ko69VafMSpLBwgbk.br.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/5FbVcVko_TuW5Y8VB4_bHoFuDm8.br.js",
+                    "dest": "r.bing.com/rp/-x0MSzOQCe3hvplYh7ak1IGwIZs.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/5S4e_l2wpLofAsoMy4CSQCVPRho.br.js",
+                    "dest": "r.bing.com/rp/GqYH8DiByBiZCqVusTrTXFQNN9Q.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/6mZmj1db42G_jniFgdT7MCvBgyA.br.js",
+                    "dest": "r.bing.com/rp/JigriHckblqcu1XwKpT4wumVS2k.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/6slp3E-BqFf904Cz6cCWPY1bh9E.br.js",
+                    "dest": "r.bing.com/rp/H98Meq6f86N5zkOjRPVOIPIr5pE.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/6zg86aHGTXWfySoaJQRqV18s0QQ.br.css",
+                    "dest": "www.bing.com/rp/fHZP5vAMq4BYyuujjrdIIIijePQ.png"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/7fEdNSXLMWxUxQ1SVSMGfOMYvxY.br.js",
+                    "dest": "r.bing.com/rp/xrUJJ8sN8ucbiFbMJle3n0IfRwU.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/8CgcSSLayxEVUBf0swP_bQGMId8.br.js",
+                    "dest": "r.bing.com/rp/V_fBQ_iVmAgE_Ta_T-6BNXc0ZY4.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/8w26ODmd1hk4C30WJtfkdBYFSfE.br.js",
+                    "dest": "r.bing.com/rp/VJnSxYcv7TZB-im7xvuwo7wcIGs.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/95z5wMy4UcfbSSSlSw780vQ5jKA.jpg",
+                    "dest": "r.bing.com/rp/GJDmKr3_TS3Qpm6KEL9UKUQKUO4.jpg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/9cuwOQ_qE7qTGKohzrf_gIjTlPI.br.js",
+                    "dest": "r.bing.com/rp/Gw7eETSwe7GHmKwW1lRqGPQJXRo.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/9tfFg6vO9uS7FxceSoXBYqA1DZY.br.js",
+                    "dest": "r.bing.com/rp/HwXY4ae-0LbNIa2sHcj2Z3DKJlE.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/9xGNA8UskvA9WHF58zbLOHZ5HvI.br.js",
+                    "dest": "r.bing.com/rp/bRCkl84vXs7Ndg2yyBzYr2eVQIg.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/A8TgFKHtB07SYRtYie15tvHtiqY.br.js",
+                    "dest": "r.bing.com/rp/lLk8XmbdNzzlnPRzVzDhaF9yjqw.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/BDwYWcRQC1NNdqbnczZFTEPNiGk.br.js",
+                    "dest": "r.bing.com/rp/t5vZ9VqTO-Sl4hN969ySbvZgV0g.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/BlTioeDsWnYvy2P--9OEmBraoOs.br.js",
+                    "dest": "r.bing.com/rp/1Fv2ZQvZTbMVx7KoU_6WkFwvTJ4.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/C-2rpfLKDHy4aQxex3ShhgSO_OM.br.js",
+                    "dest": "r.bing.com/rp/ZDuP1RxmIvW4zmuvz53att_oXdo.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/C7TuoP5bfHv-CZlMHZy7yfvI4Fk.br.js",
+                    "dest": "r.bing.com/rp/XJ8OmILbNhm0zU9tdkuGYeXVPRQ.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/CcMXS8Oo0OUnUE0LzYK9AFJ6la8.br.js",
+                    "dest": "r.bing.com/rp/uP67zbZbUB4EF9kyMx0mhlm79lw.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/D-hEdXC7G-DgvV_tAK4BodWZ7no.png",
+                    "dest": "r.bing.com/rp/HbkPYqcLh_xqZSd1KqLTrWN8MYY.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/Dl3Mgy5b8mZk0rO25YbvLM3bp7Q.svg",
+                    "dest": "r.bing.com/rp/dLtBV4YNQwZE782_Om7v0nqU1bY.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/EcPZJcvBpS1TWE_YYG-PcTqlkRQ.br.js",
+                    "dest": "r.bing.com/rp/5FbVcVko_TuW5Y8VB4_bHoFuDm8.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/EmbwE8rah_7zdUQkosWSw-5nAPY.br.js",
+                    "dest": "r.bing.com/rp/uisvzjZ4fXjpFRgCfnfjmS4U4aA.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/FETIIg2L7hzQ9SoR9Kg40TQiXAc.br.js",
+                    "dest": "r.bing.com/rp/K_V1CARn2Q2lTs5njJKUvUkHyi4.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/FTmJMkisSOAwXdvbYo-M3c6924I.br.js",
+                    "dest": "r.bing.com/rp/Lczar4f9BXKz-AZUtUwkDhnKzm0.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/Fsa_OI0AplCnVoXGca8ALOo0S0s.svg",
+                    "dest": "r.bing.com/rp/UYtUYDcn1oZlFG-YfBPz59zejYI.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/GJDmKr3_TS3Qpm6KEL9UKUQKUO4.jpg",
+                    "dest": "r.bing.com/rp/ln5TQq6AIWfcBlduDk-5bnaJMpY.jpg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/GSNeCa5XvtoP6jz0k5V172vRaQ8.br.js",
+                    "dest": "r.bing.com/rp/3US3nNU_RgsSNFm9Bzw6xgeuOHk.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/GqYH8DiByBiZCqVusTrTXFQNN9Q.br.js",
+                    "dest": "r.bing.com/rp/z2dAP6NRI-oD0zBNaTUoppVXDNo.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/Gw7eETSwe7GHmKwW1lRqGPQJXRo.br.js",
+                    "dest": "r.bing.com/rp/0IsYKSwwm5FfLJloF96TVqP7I84.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/Gyuq2bqitqDJM0BeAkbKXGlQXNw.br.js",
+                    "dest": "r.bing.com/rp/n21aGRCN5EKHB3qObygw029dyNU.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/H98Meq6f86N5zkOjRPVOIPIr5pE.br.js",
+                    "dest": "r.bing.com/rp/SDeE6NKJQCkfNK6cB0GHg-KiEns.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/HbkPYqcLh_xqZSd1KqLTrWN8MYY.br.js",
+                    "dest": "r.bing.com/rp/hkXWsTcGTHs44QxzZyThd4fbbPM.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/HwXY4ae-0LbNIa2sHcj2Z3DKJlE.br.js",
+                    "dest": "r.bing.com/rp/4RUiOcmOi-yBMR4tQaaqAG5d5us.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/I0oqL6KlxQg6fTOUf0zgtDXii0M.svg",
+                    "dest": "th.bing.com/th"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/ID-70CBAEOXh6Nwxga-CxgpUq4k.br.js",
+                    "dest": "r.bing.com/rp/4ZdovUOtRqb58WWDaWm5ExfObls.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/IEsUJAq41KbrXKW7f2nmdJPCUXs.br.js",
+                    "dest": "r.bing.com/rs/7b/t2/jnc"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/IdYT2Zd3XscGORykClHulJlaUlw.png",
+                    "dest": "www.bing.com/fd/ls/GLinkPing.aspx"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/JJUoNR9AIuJ1E79GNdLXKItzr4Y.br.js",
+                    "dest": "www.bing.com/AS/Suggestions"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/JXkjDPywJD9oeuWPLy7bD8Jc6mw.br.js",
+                    "dest": "r.bing.com/rp/ilbkF5vv0sk3tJ8LDY0Nm39p12g.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/JigriHckblqcu1XwKpT4wumVS2k.br.js",
+                    "dest": "r.bing.com/rp/UftfQbYuKvGGEUHPU3QGHYd90Z8.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/KC_nX2_tPPyFvVw1RK20Yu1FyDk.svg",
+                    "dest": "r.bing.com/rp/NnFHhz2jL6yzChtIhaB5IIVKY5k.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/K_V1CARn2Q2lTs5njJKUvUkHyi4.br.js",
+                    "dest": "wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/LXu4eYVt3NhFk3Ud9ZbhZ_PYFaA.br.js",
+                    "dest": "r.bing.com/rp/JXkjDPywJD9oeuWPLy7bD8Jc6mw.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/Lczar4f9BXKz-AZUtUwkDhnKzm0.br.js",
+                    "dest": "bing.com/th"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/MjkKTrIX9w2UKVd1W1WV1Gj2zWM.br.js",
+                    "dest": "r.bing.com/rp/Gyuq2bqitqDJM0BeAkbKXGlQXNw.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/NLTwbkpTJpMHGkXVdaW9OppjTiw.br.css",
+                    "dest": "r.bing.com/rp/PZ76sazggYnBmuarZgy-_W550X8.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/NbA_o5_JH0GEi8eQ-UOtARHo4pE.svg",
+                    "dest": "r.bing.com/rp/Dl3Mgy5b8mZk0rO25YbvLM3bp7Q.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/NfTD8Ovh04Y_Ni14YxqYB8R_2_Q.br.js",
+                    "dest": "r.bing.com/rp/fRSNKQanUHk53F1a1Bi8UA71Qt4.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/NnFHhz2jL6yzChtIhaB5IIVKY5k.svg",
+                    "dest": "r.bing.com/rp/hx-eea1zqtCz4K0bW2uH_oN7Fs4.jpg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/O7fNg96R1_CsQZshpnEC3v_JCPI.br.js",
+                    "dest": "r.bing.com/rp/7fEdNSXLMWxUxQ1SVSMGfOMYvxY.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/OEuAD-wfCz5nK288ObdzAdFH-iU.br.js",
+                    "dest": "r.bing.com/rp/IdYT2Zd3XscGORykClHulJlaUlw.png"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/OFc1_3z9AF9sE0FyaZ2URvDI8JI.br.js",
+                    "dest": "r.bing.com/rp/FETIIg2L7hzQ9SoR9Kg40TQiXAc.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/PZ76sazggYnBmuarZgy-_W550X8.br.js",
+                    "dest": "r.bing.com/rp/s3ydRDPqMugP_EjrunOTC4bo_Ac.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/PrQ373ob8GVFmIUI5rk5UyOqdPQ.br.js",
+                    "dest": "r.bing.com/rp/IEsUJAq41KbrXKW7f2nmdJPCUXs.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/QGgDCAP4Fmzft4oE0wUK8k18tLI.br.js",
+                    "dest": "r.bing.com/rp/BDwYWcRQC1NNdqbnczZFTEPNiGk.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/R14ozkkie30zM6FSjzwWFp8Ffzk.br.js",
+                    "dest": "r.bing.com/rp/MjkKTrIX9w2UKVd1W1WV1Gj2zWM.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/RvRBoZ5KQDNHwbHfo-_ZBZIoYQo.br.js",
+                    "dest": "r.bing.com/rp/ml6tcUb8Ta5kBuZXGzDE3tFty0g.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/SDeE6NKJQCkfNK6cB0GHg-KiEns.br.js",
+                    "dest": "r.bing.com/rp/O7fNg96R1_CsQZshpnEC3v_JCPI.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/SQJFanoR_oiYec8uii4GG7LKg2o.br.js",
+                    "dest": "www.bing.com/fd/ls/l"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/UYtUYDcn1oZlFG-YfBPz59zejYI.svg",
+                    "dest": "r.bing.com/rp/kiGH9ukZK6Q4hvtDtwwVc1yvueg.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/UftfQbYuKvGGEUHPU3QGHYd90Z8.br.js",
+                    "dest": "r.bing.com/rp/06bQtOdvnqIODKnOBKJedLV7FUg.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/V-eN3xa_9CBLDYyND2ik2LPwz-o.svg",
+                    "dest": "th.bing.com/th"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/VJnSxYcv7TZB-im7xvuwo7wcIGs.br.js",
+                    "dest": "r.bing.com/rp/PrQ373ob8GVFmIUI5rk5UyOqdPQ.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/V_fBQ_iVmAgE_Ta_T-6BNXc0ZY4.br.js",
+                    "dest": "r.bing.com/rp/C7TuoP5bfHv-CZlMHZy7yfvI4Fk.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/WRGhsWGnkf3ko69VafMSpLBwgbk.br.css",
+                    "dest": "r.bing.com/rp/2DP_XqmIF8oInMGjMnxM36UXY0Q.br.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/WjLJz0ZZ3W6qclUa_RsS6VdZFzE.br.js",
+                    "dest": "r.bing.com/rp/QGgDCAP4Fmzft4oE0wUK8k18tLI.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/X1Cjkakv1epBOGfkIjYblQJvweU.br.js",
+                    "dest": "r.bing.com/rp/owNYbZFYWGN-GrVLz5gXKSiYUW4.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/XJ8OmILbNhm0zU9tdkuGYeXVPRQ.br.js",
+                    "dest": "r.bing.com/rp/gKwIRAF4fg7noG1zyeUz8x3Jdhc.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/Xs0bcRwli50H_9_TOsfurmNnZ64.br.js",
+                    "dest": "r.bing.com/rp/uiannz55FdT0j3p9jGwegfI5aIY.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/Y26LIcmRz0EdnBtSjtN2P4pbrp4.br.js",
+                    "dest": "r.bing.com/rp/0qo7e16hAJuKr67fZ-dKtNlvtjg.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/ZDuP1RxmIvW4zmuvz53att_oXdo.br.js",
+                    "dest": "r.bing.com/rp/6slp3E-BqFf904Cz6cCWPY1bh9E.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/ac0si7-jRRg7fGLyaXMYocX1U40.br.js",
+                    "dest": "r.bing.com/rp/2pI-3yxS71qnL6vzhVIltDQouTg.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/bRCkl84vXs7Ndg2yyBzYr2eVQIg.br.js",
+                    "dest": "r.bing.com/rp/GSNeCa5XvtoP6jz0k5V172vRaQ8.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/c4ruj6QGsmSnOG64gJJnnnYDa44.br.css",
+                    "dest": "r.bing.com/rp/5-y8FBmAkXLBZZghI-X94CRnsqg.br.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/cfeVf2-uV0hUo3ToTbLjztuomWk.jpg",
+                    "dest": "r.bing.com/rp/lvCKZ07bEYtoYmY62ifMzVa0RIE.jpg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/dLtBV4YNQwZE782_Om7v0nqU1bY.svg",
+                    "dest": "r.bing.com/rp/I0oqL6KlxQg6fTOUf0zgtDXii0M.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/dbmNS45xQvD1diApY1T2HExvOo8.jpg",
+                    "dest": "r.bing.com/rp/cfeVf2-uV0hUo3ToTbLjztuomWk.jpg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js",
+                    "dest": "r.bing.com/rp/ID-70CBAEOXh6Nwxga-CxgpUq4k.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/fCJX-w0lvO4cxIzvTihVaRXd8hE.br.js",
+                    "dest": "r.bing.com/rp/nc60aT-MXWFDGmlflZLjNBVVxkM.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/fRSNKQanUHk53F1a1Bi8UA71Qt4.br.js",
+                    "dest": "r.bing.com/rp/6mZmj1db42G_jniFgdT7MCvBgyA.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/fdVZU4ttbw8NDRm6H3I5BW3_vCo.svg",
+                    "dest": "r.bing.com/rp/4L4QdyjTv0HYE2Ig2ol9eYoqxg8.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/gKwIRAF4fg7noG1zyeUz8x3Jdhc.br.js",
+                    "dest": "r.bing.com/rp/9cuwOQ_qE7qTGKohzrf_gIjTlPI.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/hcAzGBxfE9oRVAA1rPm7ah7lmms.br.js",
+                    "dest": "r.bing.com/rp/9xGNA8UskvA9WHF58zbLOHZ5HvI.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/hkXWsTcGTHs44QxzZyThd4fbbPM.br.js",
+                    "dest": "r.bing.com/rp/-8B2JlFI9HgFcgp0RGJHcPQD2GM.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/hx-eea1zqtCz4K0bW2uH_oN7Fs4.jpg",
+                    "dest": "r.bing.com/rp/95z5wMy4UcfbSSSlSw780vQ5jKA.jpg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/hx1FP91l4PKrDhCLfXHf3ouMwSg.br.js",
+                    "dest": "r.bing.com/rp/ulJ3ckR0YcGpvIX6xhO4prJhEQQ.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/ilbkF5vv0sk3tJ8LDY0Nm39p12g.br.js",
+                    "dest": "r.bing.com/rp/R14ozkkie30zM6FSjzwWFp8Ffzk.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/kVSuu2GgnGoU6zMv1zm7Dbh6pUw.br.css",
+                    "dest": "www.bing.com/fd/ls/l"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/kiGH9ukZK6Q4hvtDtwwVc1yvueg.svg",
+                    "dest": "r.bing.com/rp/KC_nX2_tPPyFvVw1RK20Yu1FyDk.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/lLk8XmbdNzzlnPRzVzDhaF9yjqw.br.js",
+                    "dest": "r.bing.com/rp/qi9FYI6I1UoBJBF7vnl-c21ZF8w.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/lmu8EBCaPRMKtay8LSArGyY3mv4.br.js",
+                    "dest": "r.bing.com/rs/7b/kq/jnc"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/ln5TQq6AIWfcBlduDk-5bnaJMpY.jpg",
+                    "dest": "r.bing.com/rp/dbmNS45xQvD1diApY1T2HExvOo8.jpg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/lvCKZ07bEYtoYmY62ifMzVa0RIE.jpg",
+                    "dest": "r.bing.com/rp/ni3MyKKVu9pK0SgY6gb6Z2NOGpg.jpg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/ml6tcUb8Ta5kBuZXGzDE3tFty0g.br.js",
+                    "dest": "r.bing.com/rp/9tfFg6vO9uS7FxceSoXBYqA1DZY.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/n21aGRCN5EKHB3qObygw029dyNU.br.js",
+                    "dest": "r.bing.com/rp/8CgcSSLayxEVUBf0swP_bQGMId8.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/nc60aT-MXWFDGmlflZLjNBVVxkM.br.js",
+                    "dest": "r.bing.com/rp/CcMXS8Oo0OUnUE0LzYK9AFJ6la8.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/ni3MyKKVu9pK0SgY6gb6Z2NOGpg.jpg",
+                    "dest": "bing.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/owNYbZFYWGN-GrVLz5gXKSiYUW4.br.js",
+                    "dest": "r.bing.com/rp/ac0si7-jRRg7fGLyaXMYocX1U40.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/qi9FYI6I1UoBJBF7vnl-c21ZF8w.br.js",
+                    "dest": "r.bing.com/rp/hcAzGBxfE9oRVAA1rPm7ah7lmms.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/s3ydRDPqMugP_EjrunOTC4bo_Ac.br.js",
+                    "dest": "r.bing.com/rp/1BD4shj-pYkAhF3p2hEOgHUx2FQ.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/t5vZ9VqTO-Sl4hN969ySbvZgV0g.br.js",
+                    "dest": "r.bing.com/rp/RvRBoZ5KQDNHwbHfo-_ZBZIoYQo.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/uP67zbZbUB4EF9kyMx0mhlm79lw.br.js",
+                    "dest": "r.bing.com/rp/X1Cjkakv1epBOGfkIjYblQJvweU.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/uiannz55FdT0j3p9jGwegfI5aIY.br.js",
+                    "dest": "r.bing.com/rp/eKvcHdnNwo1WcxoSioV4ztnfZk8.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/uisvzjZ4fXjpFRgCfnfjmS4U4aA.br.js",
+                    "dest": "r.bing.com/rp/yOU5_vGeE7HIs09fec6ZV9prLO4.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/ulJ3ckR0YcGpvIX6xhO4prJhEQQ.br.js",
+                    "dest": "r.bing.com/rp/fdVZU4ttbw8NDRm6H3I5BW3_vCo.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/vu0bslOwQHUGRzaMOU7IekYpE0I.br.js",
+                    "dest": "r.bing.com/rp/fCJX-w0lvO4cxIzvTihVaRXd8hE.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/wNhUjm3kl_kvyfrio44J6j1zdYo.br.js",
+                    "dest": "r.bing.com/rp/WjLJz0ZZ3W6qclUa_RsS6VdZFzE.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/xrUJJ8sN8ucbiFbMJle3n0IfRwU.br.js",
+                    "dest": "r.bing.com/rp/LXu4eYVt3NhFk3Ud9ZbhZ_PYFaA.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/y1tiMssL1_ZRGIkBjxDYmR2kX8o.br.js",
+                    "dest": "r.bing.com/rp/8w26ODmd1hk4C30WJtfkdBYFSfE.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/yOU5_vGeE7HIs09fec6ZV9prLO4.br.js",
+                    "dest": "r.bing.com/rp/vu0bslOwQHUGRzaMOU7IekYpE0I.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/z2dAP6NRI-oD0zBNaTUoppVXDNo.br.js",
+                    "dest": "r.bing.com/rp/Xs0bcRwli50H_9_TOsfurmNnZ64.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rp/zlfm-hC70pZAs62UVTTl3KShKOE.br.js",
+                    "dest": "r.bing.com/rp/EcPZJcvBpS1TWE_YYG-PcTqlkRQ.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rs/7b/j2/jnc",
+                    "dest": "r.bing.com/rp/4qLYPfN0EmVUH2TIgYLmYcXKYtQ.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rs/7b/kq/jnc",
+                    "dest": "r.bing.com/rp/FTmJMkisSOAwXdvbYo-M3c6924I.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rs/7b/t2/jnc",
+                    "dest": "r.bing.com/rp/5S4e_l2wpLofAsoMy4CSQCVPRho.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r.bing.com/rs/7b/x6/nj/V9Lbi4rGakA-OjwcLcoh5jr1zfY.js",
+                    "dest": "r.bing.com/rp/OFc1_3z9AF9sE0FyaZ2URvDI8JI.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "r3.i.lencr.org/",
+                    "dest": "trace.mediago.io/cs/msn"
+                },
+                {
+                    "trigger": "next",
+                    "source": "stubdownloader.services.mozilla.com/",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/weather-card-wc.7c4f00c517f2860e70ec.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "stubdownloader.services.mozilla.com/",
+                    "dest": "id5-sync.com/c/495/0/0/1.gif"
+                },
+                {
+                    "trigger": "next",
+                    "source": "sync.inmobi.com/oRTB",
+                    "dest": "mozilla.org/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "sync.outbrain.com/uidmappixel",
+                    "dest": "assets.msn.com/content/v1/cms/api/amp/Document/BB14isyG"
+                },
+                {
+                    "trigger": "next",
+                    "source": "th.bing.com/th",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/background-gallery.d44590df05647049bc99.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "th.bing.com/th",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/channel-filter-card.bc572f7087cb851630b6.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "th.bing.com/th",
+                    "dest": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA13slaS.img"
+                },
+                {
+                    "trigger": "next",
+                    "source": "th.bing.com/th",
+                    "dest": "img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1g7bhz.img"
+                },
+                {
+                    "trigger": "next",
+                    "source": "th.bing.com/th",
+                    "dest": "img-s-msn-com.akamaized.net/tenant/amp/entityid/BBYyvk2"
+                },
+                {
+                    "trigger": "next",
+                    "source": "th.bing.com/th",
+                    "dest": "r.bing.com/rp/2Ro4LD_2OaiuqUlZYlpozEd7Bf0.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "th.bing.com/th",
+                    "dest": "www.bing.com/sa/simg/favicon-trans-bg-blue-mg.ico"
+                },
+                {
+                    "trigger": "next",
+                    "source": "th.bing.com/th",
+                    "dest": "www.bing.com/search"
+                },
+                {
+                    "trigger": "next",
+                    "source": "trace.mediago.io/cs/msn",
+                    "dest": "mediago.io/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "trace.popin.cc/cs/msn",
+                    "dest": "popin.cc/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "w3schools.com/",
+                    "dest": "www.w3schools.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/img/arrow-left.a26976f.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "windows.msn.com/",
+                    "dest": "windows.msn.com/staticsb/statics/latest/fixed/CloudConfigs/WindowsDashboard/ClientApp/wdgts_conf.json"
+                },
+                {
+                    "trigger": "next",
+                    "source": "windows.msn.com/staticsb/statics/latest/fixed/CloudConfigs/WindowsDashboard/ClientApp/wdgts_conf.json",
+                    "dest": "api.msn.com/auth/cookie"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/",
+                    "dest": "bing.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/",
+                    "dest": "www.bing.com/th"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/AS/Suggestions",
+                    "dest": "r.bing.com/rp/4-b0WnMTXP-gFzXHw0vjuAWCOPk.br.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/AS/Suggestions",
+                    "dest": "r.bing.com/rp/OEuAD-wfCz5nK288ObdzAdFH-iU.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/AS/Suggestions",
+                    "dest": "www.bing.com/fd/ls/l"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/AS/Suggestions",
+                    "dest": "www.bing.com/images/sbi"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/AS/Suggestions",
+                    "dest": "www.bing.com/notifications/render"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/AS/Suggestions",
+                    "dest": "www.bing.com/rp/ZqcguoCiF8MOwMO7koYG5q3zX2A.png"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/AS/Suggestions",
+                    "dest": "www.bing.com/sa/simg/Roboto_Regular.woff2"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/bloomfilterfiles/ExpandedDomainsFilterGlobal.json",
+                    "dest": "edge.microsoft.com/entityextractiontemplates/api/v1/assets/find-assets"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/ck/a",
+                    "dest": "bing.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/ck/a",
+                    "dest": "www.bing.com/search"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/favicon.ico",
+                    "dest": "www.mozilla.org/media/js/site.9537923fdd7f.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/GLinkPing.aspx",
+                    "dest": "www.bing.com/fd/ls/l"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/l",
+                    "dest": "assets.msn.com/bundles/v1/bingHomepage/latest/widget-initializer.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/l",
+                    "dest": "bing.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/l",
+                    "dest": "edge.microsoft.com/entityextractiontemplates/api/v1/assets/find-assets"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/l",
+                    "dest": "edgeassetservice.azureedge.net/assets/product_category_en/1.0.0/asset"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/l",
+                    "dest": "r.bing.com/rp/NbA_o5_JH0GEi8eQ-UOtARHo4pE.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/l",
+                    "dest": "r.bing.com/rp/V-eN3xa_9CBLDYyND2ik2LPwz-o.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/l",
+                    "dest": "r.bing.com/rp/hx1FP91l4PKrDhCLfXHf3ouMwSg.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/l",
+                    "dest": "trace.mediago.io/cs/msn"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/l",
+                    "dest": "www.bing.com/AS/Suggestions"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/l",
+                    "dest": "www.bing.com/geolocation/write"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/l",
+                    "dest": "www.bing.com/hp/api/model"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/l",
+                    "dest": "www.bing.com/qbox"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/l",
+                    "dest": "www.bing.com/rp/IvfoLO3XuUzsCyfv53CD-ckZU3s.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/fd/ls/l",
+                    "dest": "www.bing.com/search"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/geolocation/write",
+                    "dest": "r.bing.com/rp/Y26LIcmRz0EdnBtSjtN2P4pbrp4.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/hp/api/model",
+                    "dest": "www.bing.com/AS/Suggestions"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/hp/api/v1/codexnudge",
+                    "dest": "bing.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/images/sbi",
+                    "dest": "www.bing.com/fd/ls/l"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/images/sbi",
+                    "dest": "www.bing.com/hp/api/v1/codexnudge"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/notifications/render",
+                    "dest": "www.bing.com/AS/Suggestions"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/qbox",
+                    "dest": "r.bing.com/rp/6zg86aHGTXWfySoaJQRqV18s0QQ.br.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/qbox",
+                    "dest": "windows.msn.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/rp/IvfoLO3XuUzsCyfv53CD-ckZU3s.br.js",
+                    "dest": "www.bing.com/sa/simg/favicon-trans-bg-blue-mg-png.png"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/rp/ZqcguoCiF8MOwMO7koYG5q3zX2A.png",
+                    "dest": "www.bing.com/rp/cj6w0DX8V1VVlRTS_G7PdLHOKsQ.png"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/rp/cj6w0DX8V1VVlRTS_G7PdLHOKsQ.png",
+                    "dest": "www.bing.com/fd/ls/l"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/rp/fHZP5vAMq4BYyuujjrdIIIijePQ.png",
+                    "dest": "www.bing.com/rp/mQ1jqL6pz-ujeaitVodQ9e3qew0.png"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/rp/mQ1jqL6pz-ujeaitVodQ9e3qew0.png",
+                    "dest": "r.bing.com/rb/H/cir3"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/sa/simg/Roboto_Regular.woff2",
+                    "dest": "www.bing.com/sa/simg/Roboto_Semibold.woff2"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/sa/simg/Roboto_Semibold.woff2",
+                    "dest": "www.bing.com/fd/ls/l"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/sa/simg/favicon-trans-bg-blue-mg-png.png",
+                    "dest": "r.bing.com/rp/D-hEdXC7G-DgvV_tAK4BodWZ7no.png"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/sa/simg/favicon-trans-bg-blue-mg.ico",
+                    "dest": "www.bing.com/fd/ls/l"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/sdch/dictionary/search_en_us/IO2Fcb1c",
+                    "dest": "www.bing.com/fd/ls/l"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/search",
+                    "dest": "r.bing.com/rp/c4ruj6QGsmSnOG64gJJnnnYDa44.br.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/search",
+                    "dest": "www.bing.com/qbox"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/search",
+                    "dest": "www.mozilla.org/en-US/firefox/new/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.bing.com/th",
+                    "dest": "r.bing.com/rp/lmu8EBCaPRMKtay8LSArGyY3mv4.br.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.google-analytics.com/analytics.js",
+                    "dest": "www.google-analytics.com/plugins/ua/linkid.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.google-analytics.com/plugins/ua/linkid.js",
+                    "dest": "mozilla.org/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.google.com/",
+                    "dest": "google.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.google.com/search",
+                    "dest": "google.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.googletagmanager.com/gtag/js",
+                    "dest": "www.google-analytics.com/analytics.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.googletagmanager.com/gtm.js",
+                    "dest": "www.mozilla.org/media/protocol/fonts/Metropolis-Bold.6a80125e795a.woff2"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.microsoft.com/edge/welcome",
+                    "dest": "www.microsoft.com/en-us/edge/welcome"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.microsoft.com/en-us/edge/welcome",
+                    "dest": "edgestatic.azureedge.net/shared/edgeweb/622dd1f.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.microsoft.com/en-us/edge/welcome",
+                    "dest": "go.microsoft.com/fwlink/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/",
+                    "dest": "assets.msn.com/bundles/v1/edgeChromium/latest/common-segments.626a22fc4cc23ec96dc6.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/",
+                    "dest": "mozilla.org/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/en-US/firefox/download/thanks/",
+                    "dest": "www.mozilla.org/media/css/protocol-call-out.8aa9401fb138.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/en-US/firefox/new/",
+                    "dest": "www.bing.com/ck/a"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/en-US/firefox/new/",
+                    "dest": "www.bing.com/favicon.ico"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/en-US/firefox/new/",
+                    "dest": "www.mozilla.org/media/js/ui.cc2c33643e11.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/en-US/firefox/stub_attribution_code/",
+                    "dest": "www.mozilla.org/media/img/firefox/new/desktop/features/one.a00c0790c101.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/en-US/privacy/firefox/",
+                    "dest": "google.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/css/firefox_desktop_download.21f80248506d.css",
+                    "dest": "www.mozilla.org/media/js/gtm-snippet.a788d552f536.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/css/firefox_desktop_download_thanks.296aca0a8dad.css",
+                    "dest": "www.mozilla.org/media/js/firefox_new_thanks.d8e63bc283f0.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/css/protocol-call-out.8aa9401fb138.css",
+                    "dest": "www.mozilla.org/media/css/firefox_desktop_download_thanks.296aca0a8dad.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/css/protocol-card.d77db2f7c1c0.css",
+                    "dest": "www.mozilla.org/media/css/protocol-emphasis-box.4ddd0fb346b4.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/css/protocol-emphasis-box.4ddd0fb346b4.css",
+                    "dest": "www.mozilla.org/media/css/firefox_desktop_download.21f80248506d.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/css/protocol-firefox.03b44773f9ba.css",
+                    "dest": "www.mozilla.org/media/css/protocol-card.d77db2f7c1c0.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/favicons/firefox/browser/favicon.f093404c0135.ico",
+                    "dest": "www.mozilla.org/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/firefox/new/desktop/comparison-noodles-mr1.c18c975efae6.svg",
+                    "dest": "www.mozilla.org/media/img/firefox/new/desktop/feature-fxview.5cbce5a8ee41.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/firefox/new/desktop/feature-fxview.5cbce5a8ee41.svg",
+                    "dest": "www.mozilla.org/media/img/firefox/new/desktop/feature-pdf-edit.1caefd8b6df8.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/firefox/new/desktop/feature-pdf-edit.1caefd8b6df8.svg",
+                    "dest": "www.mozilla.org/media/img/firefox/new/desktop/feature-tracking-protection-shield.5966cde25a83.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/firefox/new/desktop/feature-tracking-protection-shield.5966cde25a83.svg",
+                    "dest": "www.mozilla.org/media/img/logos/chrome/logo-chrome.36729db6cd71.png"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/firefox/new/desktop/features/one.a00c0790c101.svg",
+                    "dest": "www.mozilla.org/media/img/firefox/new/desktop/features/two.bfc347fab404.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/firefox/new/desktop/features/oval-one.e4113dd8c0e7.svg",
+                    "dest": "www.mozilla.org/media/img/firefox/new/desktop/features/oval-two.b7a43f0b20fa.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/firefox/new/desktop/features/oval-two.b7a43f0b20fa.svg",
+                    "dest": "www.mozilla.org/media/img/firefox/new/desktop/features/rect-one.63fc8d035cbb.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/firefox/new/desktop/features/rect-one.63fc8d035cbb.svg",
+                    "dest": "www.mozilla.org/media/img/firefox/new/desktop/features/rect-two.87563558f61e.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/firefox/new/desktop/features/rect-two.87563558f61e.svg",
+                    "dest": "www.mozilla.org/media/img/favicons/firefox/browser/favicon.f093404c0135.ico"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/firefox/new/desktop/features/two.bfc347fab404.svg",
+                    "dest": "www.mozilla.org/media/img/firefox/new/desktop/features/oval-one.e4113dd8c0e7.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/firefox/new/desktop/hero-mr1.c078ff206641.png",
+                    "dest": "www.mozilla.org/media/img/firefox/new/desktop/release-noodles.9d2052dac440.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/firefox/new/desktop/icon-check.a288e927664c.svg",
+                    "dest": "www.mozilla.org/media/img/firefox/new/desktop/icon-dash.17b7c28a843b.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/firefox/new/desktop/icon-dash.17b7c28a843b.svg",
+                    "dest": "www.mozilla.org/media/protocol/img/zaps/zap-14.59889e9bbc67.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/firefox/new/desktop/release-noodles.9d2052dac440.svg",
+                    "dest": "www.mozilla.org/media/protocol/img/zaps/zap-08.fc201d70f76b.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/l10n/en-US/firefox/android/btn-google-play.77bdbc935c58.png",
+                    "dest": "www.mozilla.org/media/img/l10n/en-US/firefox/ios/btn-app-store.1cfd5dba4a92.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/l10n/en-US/firefox/ios/btn-app-store.1cfd5dba4a92.svg",
+                    "dest": "www.googletagmanager.com/gtm.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/logos/chrome/logo-chrome.36729db6cd71.png",
+                    "dest": "www.mozilla.org/media/img/firefox/new/desktop/icon-check.a288e927664c.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/logos/edge/logo-edge.016a47a7fab3.png",
+                    "dest": "www.googletagmanager.com/gtag/js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/logos/social/linkedin-black.5cb4b3466aad.svg",
+                    "dest": "www.mozilla.org/media/img/logos/social/tiktok-black.37a70992a8d0.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/logos/social/mastodon-black.eda6d9fda842.svg",
+                    "dest": "www.mozilla.org/media/protocol/img/icons/social/instagram/black.3145aa92e4bd.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/logos/social/spotify-black.d525a374e3f5.svg",
+                    "dest": "www.mozilla.org/media/protocol/img/icons/social/youtube/black.4676190b1a83.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/logos/social/tiktok-black.37a70992a8d0.svg",
+                    "dest": "www.mozilla.org/media/img/logos/social/spotify-black.d525a374e3f5.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/img/logos/windows/logo-windows-black.85f4165e8267.svg",
+                    "dest": "sync.inmobi.com/oRTB"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/js/data.6993caf19b0c.js",
+                    "dest": "www.mozilla.org/media/js/stub-attribution.bd58bded0c23.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/js/firefox_desktop_download.bb43a8702653.js",
+                    "dest": "www.mozilla.org/media/js/firefox_new_desktop_join_modal.4eac3318aa72.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/js/firefox_new_desktop_join_modal.4eac3318aa72.js",
+                    "dest": "www.mozilla.org/media/protocol/img/logos/mozilla/logo-word-hor.e20791bb4dd4.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/js/firefox_new_thanks.d8e63bc283f0.js",
+                    "dest": "www.mozilla.org/media/img/logos/windows/logo-windows-black.85f4165e8267.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/js/fxa.d28e0add80be.js",
+                    "dest": "www.mozilla.org/media/js/data.6993caf19b0c.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/js/gtm-snippet.a788d552f536.js",
+                    "dest": "www.mozilla.org/media/js/sentry.bef0cad3910b.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/js/lib.f7cc5ac1f5fe.js",
+                    "dest": "www.mozilla.org/en-US/firefox/new/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/js/sentry.bef0cad3910b.js",
+                    "dest": "www.mozilla.org/media/js/lib.f7cc5ac1f5fe.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/js/site.9537923fdd7f.js",
+                    "dest": "www.mozilla.org/media/css/protocol-firefox.03b44773f9ba.css"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/js/stub-attribution.bd58bded0c23.js",
+                    "dest": "www.mozilla.org/media/js/firefox_desktop_download.bb43a8702653.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/js/ui.cc2c33643e11.js",
+                    "dest": "www.mozilla.org/media/js/fxa.d28e0add80be.js"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/fonts/Inter-Bold.0564381b22b2.woff2",
+                    "dest": "www.mozilla.org/media/protocol/img/logos/firefox/browser/logo-word-hor.7ff44b5b4194.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/fonts/Inter-Regular.d55e957612a3.woff2",
+                    "dest": "www.mozilla.org/media/img/firefox/new/desktop/hero-mr1.c078ff206641.png"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/fonts/Metropolis-Bold.6a80125e795a.woff2",
+                    "dest": "www.mozilla.org/media/protocol/fonts/Inter-Bold.0564381b22b2.woff2"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/img/icons/social/instagram/black.3145aa92e4bd.svg",
+                    "dest": "www.mozilla.org/media/img/logos/social/linkedin-black.5cb4b3466aad.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/img/icons/social/twitter/black.3c208dec394a.svg",
+                    "dest": "www.mozilla.org/media/img/logos/social/mastodon-black.eda6d9fda842.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/img/icons/social/youtube/black.4676190b1a83.svg",
+                    "dest": "trace.popin.cc/cs/msn"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/img/logos/firefox/browser/logo-word-hor.7ff44b5b4194.svg",
+                    "dest": "www.mozilla.org/media/protocol/fonts/Inter-Regular.d55e957612a3.woff2"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg",
+                    "dest": "www.mozilla.org/media/img/l10n/en-US/firefox/android/btn-google-play.77bdbc935c58.png"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/img/logos/mozilla/logo-word-hor.e20791bb4dd4.svg",
+                    "dest": "www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/img/zaps/zap-08.fc201d70f76b.svg",
+                    "dest": "www.mozilla.org/media/protocol/img/zaps/zap-11.b89f1adfc49b.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/img/zaps/zap-09.bc0c0b72fdaf.svg",
+                    "dest": "www.mozilla.org/media/protocol/img/zaps/zap-10.3ec60d019421.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/img/zaps/zap-10.3ec60d019421.svg",
+                    "dest": "www.mozilla.org/media/protocol/img/icons/social/twitter/black.3c208dec394a.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/img/zaps/zap-11.b89f1adfc49b.svg",
+                    "dest": "www.mozilla.org/media/img/firefox/new/desktop/comparison-noodles-mr1.c18c975efae6.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/img/zaps/zap-14.59889e9bbc67.svg",
+                    "dest": "www.mozilla.org/media/protocol/img/zaps/zap-16.fe39cc0d310d.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/media/protocol/img/zaps/zap-16.fe39cc0d310d.svg",
+                    "dest": "www.mozilla.org/media/protocol/img/zaps/zap-09.bc0c0b72fdaf.svg"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.mozilla.org/privacy/firefox/",
+                    "dest": "www.mozilla.org/en-US/privacy/firefox/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.w3schools.com/",
+                    "dest": "w3schools.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www.w3schools.com/sql/sql_injection.asp",
+                    "dest": "w3schools.com/"
+                },
+                {
+                    "trigger": "next",
+                    "source": "www2.bing.com/",
+                    "dest": "apps.identrust.com/roots/dstrootcax3.p7c"
+                },
+                {
+                    "trigger": "next",
+                    "source": "x1.i.lencr.org/",
+                    "dest": "adnxs.com/"
+                }
+            ],
+            "functions": {}
+        }
+    ]
+}
