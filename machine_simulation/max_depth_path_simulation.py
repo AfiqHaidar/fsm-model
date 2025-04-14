@@ -1,4 +1,12 @@
-def path_state_simulation(machine, source_state, dest_state):
+def max_depth_path_simulation(machine, dest_state, max_depth):
+    """
+    Find all possible paths to a destination state within a maximum depth.
+
+    Args:
+        machine: The state machine to explore
+        dest_state: The destination state to reach
+        max_depth: The maximum depth of the search
+    """
     import os
     import json
 
@@ -7,10 +15,11 @@ def path_state_simulation(machine, source_state, dest_state):
     path_counter = 0
     transition_counter = 0
 
-    print(f"\n<PATH> Testing machine: {machine.name}")
-    print(f"Finding paths from '{source_state}' to '{dest_state}'")
+    print(f"\n<MAX DEPTH> Testing machine: {machine.name}")
+    print(
+        f"Finding all paths to '{dest_state}' within max depth of {max_depth}")
 
-    # First attempt: Extract transitions from the JSON configuration if possible
+    # Extract transitions from the JSON configuration if possible
     transitions_map = {}
     json_file_loaded = False
 
@@ -75,13 +84,20 @@ def path_state_simulation(machine, source_state, dest_state):
                 for trigger, dest in sorted(transitions):
                     print(f"    '{dest}' via '{trigger}'")
 
-    def dfs(current_state, path, visited_transitions, depth=0):
+    def dfs(current_state, path, visited_transitions, current_depth=0):
         nonlocal path_counter, transition_counter
-        indent = "  " * depth
+        indent = "  " * current_depth
+
+        # Stop if we've exceeded the maximum depth
+        if current_depth > max_depth:
+            if debug_enabled:
+                print(
+                    f"{indent}⚠️ Max depth reached ({max_depth}) - stopping exploration")
+            return
 
         if debug_enabled:
             print(
-                f"\n{indent}[DEPTH {depth}] Exploring from state: '{current_state}'")
+                f"\n{indent}[DEPTH {current_depth}/{max_depth}] Exploring from state: '{current_state}'")
             print(f"{indent}Current path: {' -> '.join(path)}")
 
         # If we've reached the destination state, add this path to our collection
@@ -142,9 +158,9 @@ def path_state_simulation(machine, source_state, dest_state):
             current_machine_state = machine.state
             machine.set_state(next_state)
 
-            # Recursively explore from this new state
+            # Recursively explore from this new state (with increased depth)
             dfs(next_state, path + [next_state],
-                visited_transitions, depth + 1)
+                visited_transitions, current_depth + 1)
 
             if debug_enabled:
                 print(
@@ -153,10 +169,23 @@ def path_state_simulation(machine, source_state, dest_state):
             # Always revert back to the current state after exploration
             machine.set_state(current_state)
 
-    # Start DFS from the source state
-    print("\nStarting path search...")
-    machine.set_state(source_state)
-    dfs(source_state, [source_state], set())
+    # Start DFS from each possible source state
+    print("\nStarting max depth path search...")
+
+    # Try each state as a starting point
+    for source_state in machine.states:
+        if source_state == dest_state:
+            # If source is already destination, add a single-node path
+            all_paths.append([source_state])
+            path_counter += 1
+            print(
+                f"✅ PATH FOUND #{path_counter}: {source_state} (already at destination)")
+            continue
+
+        # Set machine to this source state and start exploration
+        print(f"\nExploring from source: '{source_state}'")
+        machine.set_state(source_state)
+        dfs(source_state, [source_state], set())
 
     # Display results summary
     print("\n" + "="*50)
@@ -165,13 +194,18 @@ def path_state_simulation(machine, source_state, dest_state):
 
     if all_paths:
         print(
-            f"\nFound {len(all_paths)} path(s) from '{source_state}' to '{dest_state}':")
+            f"\nFound {len(all_paths)} path(s) to '{dest_state}' within max depth of {max_depth}:")
+
+        # Sort paths by length for better readability
+        all_paths.sort(key=len)
+
         for i, path in enumerate(all_paths, 1):
+            path_depth = len(path) - 1  # Path depth is number of transitions
             path_str = " -> ".join(path)
-            print(f"Path {i}: {path_str}")
+            print(f"Path {i}: (depth {path_depth}) {path_str}")
 
             # Print triggers used for each step
-            if debug_enabled:
+            if debug_enabled and len(path) > 1:
                 print("  Triggers used:")
                 for j in range(len(path) - 1):
                     src = path[j]
@@ -185,9 +219,10 @@ def path_state_simulation(machine, source_state, dest_state):
                             break
                     print(f"    {src} --[{trigger_used}]--> {dst}")
     else:
-        print(f"\nNo paths found from '{source_state}' to '{dest_state}'.")
+        print(
+            f"\nNo paths found to '{dest_state}' within max depth of {max_depth}.")
 
-    # Make sure to reset the machine to the source state when done
-    machine.set_state(source_state)
-    print(f"Machine reset to state: '{source_state}'")
+    # Reset the machine to its initial state when done
+    machine.set_state(machine.initial_state)
+    print(f"Machine reset to initial state: '{machine.initial_state}'")
     print("="*50)

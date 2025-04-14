@@ -1,19 +1,15 @@
 import os
 from processor import generate_json
 from factory import MachineFactory
-from runner import run_random_simulation, run_path_simulation, run_graph_simulation
-from script.domain import domain_extract
-from script.dynamic import dynamic_extract
-from script.url import url_extract
+from runner import run_random_simulation, run_path_simulation, run_graph_simulation, run_max_depth_simulation
+from script.web_activity_script import web_activity_extract
 
 
 # ==== CONSTANTS ====
 RAW_DATA_DIR = "raw_data/"
 OUTPUT_DIR = "machine_source/"
 SCRIPT_OPTIONS = {
-    "1": ("Domain-Based Extraction", domain_extract, "domain"),
-    "2": ("URL-Based Extraction", url_extract, "url"),
-    "3": ("Dynamic Extraction", dynamic_extract, "dynamic"),
+    "1": ("Web Activity", web_activity_extract, "web_activity"),
 }
 MENU_OPTIONS = {
     "1": "machines",
@@ -24,6 +20,7 @@ SIMULATION_OPTIONS = {
     "1": "random",
     "2": "path",
     "3": "graph",
+    "4": "depth",
     "0": None
 }
 
@@ -63,6 +60,7 @@ def choose_simulation():
     print("1. Random State Simulation")
     print("2. Path Simulation")
     print("3. Graph Simulation")
+    print("4. Max Depth Path Simulation")
     print("0. Back to Machine Selection")
 
     choice = input("\nChoose an option (0 to go back): ")
@@ -117,6 +115,8 @@ def run_machine_simulation(machine):
             run_path_simulation(machine)
         elif simulation_type == "graph":
             run_graph_simulation(machine)
+        elif simulation_type == "depth":
+            run_max_depth_simulation(machine)
 
 
 def generate_source():
