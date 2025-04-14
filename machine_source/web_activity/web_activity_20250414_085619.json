@@ -1,0 +1,188 @@
+{
+    "WebActivityMachine": [
+        {
+            "name": "Web_activity_20250414_085619",
+            "initial_state": "youtube.com",
+            "states": [
+                "youtube.com",
+                "youtube.com/watch",
+                "google.com",
+                "search masha and the bear",
+                "u torrent download",
+                "u torrent download for linux",
+                "utorrent.com/downloads/linux",
+                "utserver.tar.gz",
+                "download whatsapp",
+                "whatsapp.com/download",
+                "web.whatsapp.com/desktop/mac_native/release",
+                "WhatsApp-2.25.8.76.dmg",
+                "duck duck go",
+                "duckduckgo.com",
+                "play.google.com/store/apps/details",
+                "yahoo.com",
+                "download apk canva",
+                "canva.com/download",
+                "canva.com/download/mac/intel",
+                "Canva-1.106.0-universal.dmg",
+                "bing",
+                "bing.com/hp",
+                "download apk zoom",
+                "bing.com/ck/a",
+                "zoom.us/download",
+                "zoom.us/client/6.4.3.827/zoom_amd64.deb",
+                "zoom_amd64.deb"
+            ],
+            "triggers": [
+                "performed_bing_search",
+                "downloaded_file",
+                "performed_google_search",
+                "accessed_website_link",
+                "accessed_website_direct",
+                "performed_yahoo_search"
+            ],
+            "transitions": [
+                {
+                    "trigger": "performed_yahoo_search",
+                    "source": "Canva-1.106.0-universal.dmg",
+                    "dest": "bing"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "WhatsApp-2.25.8.76.dmg",
+                    "dest": "duck duck go"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "bing",
+                    "dest": "bing.com/hp"
+                },
+                {
+                    "trigger": "performed_bing_search",
+                    "source": "bing.com/ck/a",
+                    "dest": "download apk zoom"
+                },
+                {
+                    "trigger": "performed_bing_search",
+                    "source": "bing.com/hp",
+                    "dest": "download apk zoom"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "canva.com/download",
+                    "dest": "canva.com/download/mac/intel"
+                },
+                {
+                    "trigger": "downloaded_file",
+                    "source": "canva.com/download/mac/intel",
+                    "dest": "Canva-1.106.0-universal.dmg"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "download apk canva",
+                    "dest": "canva.com/download"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "download apk zoom",
+                    "dest": "bing.com/ck/a"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "download apk zoom",
+                    "dest": "zoom.us/download"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "download whatsapp",
+                    "dest": "whatsapp.com/download"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "duck duck go",
+                    "dest": "duckduckgo.com"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "duckduckgo.com",
+                    "dest": "play.google.com/store/apps/details"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "google.com",
+                    "dest": "download whatsapp"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "google.com",
+                    "dest": "search masha and the bear"
+                },
+                {
+                    "trigger": "accessed_website_direct",
+                    "source": "play.google.com/store/apps/details",
+                    "dest": "yahoo.com"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "search masha and the bear",
+                    "dest": "u torrent download"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "u torrent download",
+                    "dest": "u torrent download for linux"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "u torrent download for linux",
+                    "dest": "utorrent.com/downloads/linux"
+                },
+                {
+                    "trigger": "downloaded_file",
+                    "source": "utorrent.com/downloads/linux",
+                    "dest": "utserver.tar.gz"
+                },
+                {
+                    "trigger": "accessed_website_direct",
+                    "source": "utserver.tar.gz",
+                    "dest": "google.com"
+                },
+                {
+                    "trigger": "downloaded_file",
+                    "source": "web.whatsapp.com/desktop/mac_native/release",
+                    "dest": "WhatsApp-2.25.8.76.dmg"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "whatsapp.com/download",
+                    "dest": "web.whatsapp.com/desktop/mac_native/release"
+                },
+                {
+                    "trigger": "performed_yahoo_search",
+                    "source": "yahoo.com",
+                    "dest": "download apk canva"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "youtube.com",
+                    "dest": "youtube.com/watch"
+                },
+                {
+                    "trigger": "accessed_website_direct",
+                    "source": "youtube.com/watch",
+                    "dest": "google.com"
+                },
+                {
+                    "trigger": "downloaded_file",
+                    "source": "zoom.us/client/6.4.3.827/zoom_amd64.deb",
+                    "dest": "zoom_amd64.deb"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "zoom.us/download",
+                    "dest": "zoom.us/client/6.4.3.827/zoom_amd64.deb"
+                }
+            ],
+            "functions": {}
+        }
+    ]
+}

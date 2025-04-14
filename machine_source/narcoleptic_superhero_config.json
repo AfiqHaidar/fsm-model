@@ -37,6 +37,11 @@
           "dest": "hanging out"
         },
         {
+          "trigger": "eat",
+          "source": "hungry",
+          "dest": "hungry"
+        },
+        {
           "trigger": "distress_call",
           "source": "*",
           "dest": "saving the world",

@@ -1,0 +1,139 @@
+{
+    "WebActivityMachine": [
+        {
+            "name": "web_activity_20250414_101502",
+            "initial_state": "go.microsoft.com/fwlink",
+            "states": [
+                "go.microsoft.com/fwlink",
+                "microsoft.com/edge/welcome",
+                "microsoft.com/en-us/edge/welcome",
+                "bing.com/ck/a",
+                "mozilla firefox download",
+                "mozilla.org/en-US/firefox/new",
+                "mozilla.org/en-US/firefox/download",
+                "Firefox_Installer.exe",
+                "bing.com",
+                "login.live.com/oauth20_desktop.srf",
+                "login.live.com/oauth20_logout.srf",
+                "login.live.com/oauth20_authorize.srf",
+                "mozilla.org/privacy/firefox",
+                "mozilla.org/en-US/privacy/firefox",
+                "google.com",
+                "how to perform sql injection attack",
+                "w3schools.com/sql/sql_injection.asp"
+            ],
+            "triggers": [
+                "downloaded_file",
+                "performed_bing_search",
+                "performed_google_search",
+                "accessed_website_redirect",
+                "accessed_website_link",
+                "accessed_website",
+                "accessed_website_direct"
+            ],
+            "transitions": [
+                {
+                    "trigger": "accessed_website",
+                    "source": "Firefox_Installer.exe",
+                    "dest": "bing.com"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "Firefox_Installer.exe",
+                    "dest": "login.live.com/oauth20_desktop.srf"
+                },
+                {
+                    "trigger": "performed_bing_search",
+                    "source": "bing.com",
+                    "dest": "mozilla firefox download"
+                },
+                {
+                    "trigger": "performed_bing_search",
+                    "source": "bing.com/ck/a",
+                    "dest": "mozilla firefox download"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "go.microsoft.com/fwlink",
+                    "dest": "microsoft.com/edge/welcome"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "google.com",
+                    "dest": "how to perform sql injection attack"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "how to perform sql injection attack",
+                    "dest": "w3schools.com/sql/sql_injection.asp"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "login.live.com/oauth20_authorize.srf",
+                    "dest": "mozilla.org/privacy/firefox"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "login.live.com/oauth20_desktop.srf",
+                    "dest": "login.live.com/oauth20_logout.srf"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "login.live.com/oauth20_logout.srf",
+                    "dest": "bing.com/ck/a"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "login.live.com/oauth20_logout.srf",
+                    "dest": "login.live.com/oauth20_authorize.srf"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "microsoft.com/edge/welcome",
+                    "dest": "microsoft.com/en-us/edge/welcome"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "microsoft.com/en-us/edge/welcome",
+                    "dest": "bing.com/ck/a"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "mozilla firefox download",
+                    "dest": "bing.com/ck/a"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "mozilla firefox download",
+                    "dest": "mozilla.org/en-US/firefox/new"
+                },
+                {
+                    "trigger": "downloaded_file",
+                    "source": "mozilla.org/en-US/firefox/download",
+                    "dest": "Firefox_Installer.exe"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "mozilla.org/en-US/firefox/new",
+                    "dest": "bing.com/ck/a"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "mozilla.org/en-US/firefox/new",
+                    "dest": "mozilla.org/en-US/firefox/download"
+                },
+                {
+                    "trigger": "accessed_website_direct",
+                    "source": "mozilla.org/en-US/privacy/firefox",
+                    "dest": "google.com"
+                },
+                {
+                    "trigger": "accessed_website_redirect",
+                    "source": "mozilla.org/privacy/firefox",
+                    "dest": "mozilla.org/en-US/privacy/firefox"
+                }
+            ],
+            "functions": {}
+        }
+    ]
+}

@@ -5,7 +5,6 @@ from datetime import datetime
 
 # ==== CONSTANTS ====
 DELIMITER = ","
-FILTER_SOURCE = "WEBHIST"
 
 
 def extract_states_and_transitions(input_csv, extract_function):
@@ -18,15 +17,8 @@ def extract_states_and_transitions(input_csv, extract_function):
         reader = csv.DictReader(file, delimiter=DELIMITER)
 
         for row in reader:
-            if row.get("source") != FILTER_SOURCE:
-                continue
 
-            message = row.get("message", "")
-            if not message:
-                continue
-
-            # Use the extractor function to get (state, trigger)
-            extracted_data = extract_function(message)
+            extracted_data = extract_function(row)
             if not extracted_data:
                 continue
 
@@ -68,7 +60,7 @@ def generate_json(input_csv, output_dir, extract_function, prefix):
     json_data = {
         "WebActivityMachine": [
             {
-                "name": f"{prefix.capitalize()}_{current_time}",
+                "name": f"{prefix}_{current_time}",
                 "initial_state": states[0] if states else "unknown",
                 "states": states,
                 # Include all unique triggers

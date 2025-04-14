@@ -1,0 +1,62 @@
+{
+    "WebActivityMachine": [
+        {
+            "name": "Web_activity_20250414_085915",
+            "initial_state": "bing.com/ck/a",
+            "states": [
+                "bing.com/ck/a",
+                "mozilla firefox download",
+                "mozilla.org/en-US/firefox/new",
+                "mozilla.org/en-US/firefox/download",
+                "Firefox_Installer.exe",
+                "login.live.com/oauth20_desktop.srf",
+                "login.live.com/oauth20_logout.srf",
+                "login.live.com/oauth20_authorize.srf"
+            ],
+            "triggers": [
+                "performed_bing_search",
+                "downloaded_file",
+                "accessed_website",
+                "accessed_website_link"
+            ],
+            "transitions": [
+                {
+                    "trigger": "accessed_website",
+                    "source": "Firefox_Installer.exe",
+                    "dest": "login.live.com/oauth20_desktop.srf"
+                },
+                {
+                    "trigger": "performed_bing_search",
+                    "source": "bing.com/ck/a",
+                    "dest": "mozilla firefox download"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "login.live.com/oauth20_desktop.srf",
+                    "dest": "login.live.com/oauth20_logout.srf"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "login.live.com/oauth20_logout.srf",
+                    "dest": "login.live.com/oauth20_authorize.srf"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "mozilla firefox download",
+                    "dest": "mozilla.org/en-US/firefox/new"
+                },
+                {
+                    "trigger": "downloaded_file",
+                    "source": "mozilla.org/en-US/firefox/download",
+                    "dest": "Firefox_Installer.exe"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "mozilla.org/en-US/firefox/new",
+                    "dest": "mozilla.org/en-US/firefox/download"
+                }
+            ],
+            "functions": {}
+        }
+    ]
+}

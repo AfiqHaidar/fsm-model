@@ -1,0 +1,403 @@
+{
+    "WebActivityMachine": [
+        {
+            "name": "Web_activity_20250414_085622",
+            "initial_state": "donwload chrome for linux ubuntu",
+            "states": [
+                "donwload chrome for linux ubuntu",
+                "support.google.com/chrome/a/answer",
+                "google.com/chrome",
+                "google-chrome-stable_current_amd64.deb",
+                "google.com/chrome/next-steps.html",
+                "download brave for ubuntu",
+                "brave.com/linux",
+                "brave.com/download",
+                "laptop-updates.brave.com/download/BRV010",
+                "laptop-updates.brave.com/latest/linux64",
+                "laptop-updates.brave.com/latest/linux64/release",
+                "youtube.com/results",
+                "youtube.com/watch",
+                " dpkg frontend lock was locked by another process with pid 9949",
+                "askubuntu.com/questions/219545/dpkg-error-dpkg-status-database-is-locked-by-another-process",
+                "package architecture amd64 does not match system arm64",
+                "askubuntu.com/questions/276700/error-package-architecture-amd64-does-not-match-system-i386",
+                "reddit.com/r/linuxquestions/comments",
+                "google choimre ubuntu arm64",
+                "askubuntu.com/questions/1383789/install-chrome-on-ubuntu-debian-with-arm64",
+                "install brave linux",
+                "needrestart is being skipped since dpkg has failed",
+                "stackoverflow.com/questions/72448922/dpkg-fails-on-ubuntu-server-22-04-lts",
+                "yt",
+                "youtube.com",
+                "download frefox ubunbtu",
+                "mozilla.org/id/firefox/linux",
+                "firefox-137.0.1.tar.xz",
+                "bing.com",
+                "download firefox ubuntu",
+                "mozilla.org/en-US/firefox/linux",
+                "firefox-137.0.1__1",
+                "duckduckgo.com",
+                "download-installer.cdn.mozilla.net/pub/firefox/releases",
+                "download.mozilla.org",
+                "firefox-137.0.1__2",
+                "yahoo.com",
+                "donwload mozilla ubuntu.com",
+                "firefox-137.0.1__3",
+                "donwload zoom ubuntu",
+                "zoom.us/download",
+                "zoom_amd64.deb",
+                "google.com",
+                "cdn.zoom.us/prod/6.4.3.827/zoom_amd64.deb",
+                "zoom.us/client/6.4.3.827/zoom_amd64.deb",
+                "zoom_amd64__1",
+                "guce.yahoo.com/consent",
+                "download zoom ubuntu",
+                "support.zoom.com/hc/en/article",
+                "install zoom ubunbtu"
+            ],
+            "triggers": [
+                "performed_bing_search",
+                "downloaded_file",
+                "performed_brave_search",
+                "performed_google_search",
+                "accessed_website_redirect",
+                "accessed_website_link",
+                "accessed_website",
+                "performed_yahoo_search"
+            ],
+            "transitions": [
+                {
+                    "trigger": "accessed_website_link",
+                    "source": " dpkg frontend lock was locked by another process with pid 9949",
+                    "dest": "askubuntu.com/questions/219545/dpkg-error-dpkg-status-database-is-locked-by-another-process"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "askubuntu.com/questions/1383789/install-chrome-on-ubuntu-debian-with-arm64",
+                    "dest": "install brave linux"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "askubuntu.com/questions/219545/dpkg-error-dpkg-status-database-is-locked-by-another-process",
+                    "dest": " dpkg frontend lock was locked by another process with pid 9949"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "askubuntu.com/questions/219545/dpkg-error-dpkg-status-database-is-locked-by-another-process",
+                    "dest": "package architecture amd64 does not match system arm64"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "askubuntu.com/questions/276700/error-package-architecture-amd64-does-not-match-system-i386",
+                    "dest": "reddit.com/r/linuxquestions/comments"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "bing.com",
+                    "dest": "cdn.zoom.us/prod/6.4.3.827/zoom_amd64.deb"
+                },
+                {
+                    "trigger": "performed_bing_search",
+                    "source": "bing.com",
+                    "dest": "download firefox ubuntu"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "brave.com/download",
+                    "dest": "laptop-updates.brave.com/download/BRV010"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "brave.com/linux",
+                    "dest": "brave.com/download"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "brave.com/linux",
+                    "dest": "needrestart is being skipped since dpkg has failed"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "brave.com/linux",
+                    "dest": "youtube.com/results"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "cdn.zoom.us/prod/6.4.3.827/zoom_amd64.deb",
+                    "dest": "zoom.us/client/6.4.3.827/zoom_amd64.deb"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "donwload chrome for linux ubuntu",
+                    "dest": "support.google.com/chrome/a/answer"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "donwload mozilla ubuntu.com",
+                    "dest": "mozilla.org/en-US/firefox/linux"
+                },
+                {
+                    "trigger": "performed_yahoo_search",
+                    "source": "donwload zoom ubuntu",
+                    "dest": "download zoom ubuntu"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "donwload zoom ubuntu",
+                    "dest": "zoom.us/download"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "download brave for ubuntu",
+                    "dest": "brave.com/linux"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "download firefox ubuntu",
+                    "dest": "mozilla.org/en-US/firefox/linux"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "download frefox ubunbtu",
+                    "dest": "mozilla.org/id/firefox/linux"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "download zoom ubuntu",
+                    "dest": "duckduckgo.com"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "download-installer.cdn.mozilla.net/pub/firefox/releases",
+                    "dest": "download.mozilla.org"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "download.mozilla.org",
+                    "dest": "download-installer.cdn.mozilla.net/pub/firefox/releases"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "download.mozilla.org",
+                    "dest": "duckduckgo.com"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "download.mozilla.org",
+                    "dest": "youtube.com"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "duckduckgo.com",
+                    "dest": "download-installer.cdn.mozilla.net/pub/firefox/releases"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "duckduckgo.com",
+                    "dest": "mozilla.org/en-US/firefox/linux"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "duckduckgo.com",
+                    "dest": "support.zoom.com/hc/en/article"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "firefox-137.0.1.tar.xz",
+                    "dest": "bing.com"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "firefox-137.0.1__1",
+                    "dest": "duckduckgo.com"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "firefox-137.0.1__2",
+                    "dest": "yahoo.com"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "firefox-137.0.1__3",
+                    "dest": "download-installer.cdn.mozilla.net/pub/firefox/releases"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "google choimre ubuntu arm64",
+                    "dest": "askubuntu.com/questions/1383789/install-chrome-on-ubuntu-debian-with-arm64"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "google-chrome-stable_current_amd64.deb",
+                    "dest": "google.com/chrome/next-steps.html"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "google.com",
+                    "dest": "cdn.zoom.us/prod/6.4.3.827/zoom_amd64.deb"
+                },
+                {
+                    "trigger": "downloaded_file",
+                    "source": "google.com/chrome",
+                    "dest": "google-chrome-stable_current_amd64.deb"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "google.com/chrome/next-steps.html",
+                    "dest": "download brave for ubuntu"
+                },
+                {
+                    "trigger": "performed_yahoo_search",
+                    "source": "guce.yahoo.com/consent",
+                    "dest": "donwload zoom ubuntu"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "install brave linux",
+                    "dest": "brave.com/linux"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "install zoom ubunbtu",
+                    "dest": "support.zoom.com/hc/en/article"
+                },
+                {
+                    "trigger": "accessed_website_redirect",
+                    "source": "laptop-updates.brave.com/download/BRV010",
+                    "dest": "laptop-updates.brave.com/latest/linux64"
+                },
+                {
+                    "trigger": "accessed_website_redirect",
+                    "source": "laptop-updates.brave.com/latest/linux64",
+                    "dest": "laptop-updates.brave.com/latest/linux64/release"
+                },
+                {
+                    "trigger": "accessed_website_redirect",
+                    "source": "laptop-updates.brave.com/latest/linux64/release",
+                    "dest": "brave.com/linux"
+                },
+                {
+                    "trigger": "downloaded_file",
+                    "source": "mozilla.org/en-US/firefox/linux",
+                    "dest": "firefox-137.0.1__1"
+                },
+                {
+                    "trigger": "downloaded_file",
+                    "source": "mozilla.org/en-US/firefox/linux",
+                    "dest": "firefox-137.0.1__2"
+                },
+                {
+                    "trigger": "downloaded_file",
+                    "source": "mozilla.org/en-US/firefox/linux",
+                    "dest": "firefox-137.0.1__3"
+                },
+                {
+                    "trigger": "downloaded_file",
+                    "source": "mozilla.org/id/firefox/linux",
+                    "dest": "firefox-137.0.1.tar.xz"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "needrestart is being skipped since dpkg has failed",
+                    "dest": "stackoverflow.com/questions/72448922/dpkg-fails-on-ubuntu-server-22-04-lts"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "package architecture amd64 does not match system arm64",
+                    "dest": "askubuntu.com/questions/276700/error-package-architecture-amd64-does-not-match-system-i386"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "reddit.com/r/linuxquestions/comments",
+                    "dest": "google choimre ubuntu arm64"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "stackoverflow.com/questions/72448922/dpkg-fails-on-ubuntu-server-22-04-lts",
+                    "dest": "yt"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "support.google.com/chrome/a/answer",
+                    "dest": "google.com/chrome"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "support.zoom.com/hc/en/article",
+                    "dest": "bing.com"
+                },
+                {
+                    "trigger": "performed_yahoo_search",
+                    "source": "yahoo.com",
+                    "dest": "donwload mozilla ubuntu.com"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "yahoo.com",
+                    "dest": "guce.yahoo.com/consent"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "youtube.com",
+                    "dest": "youtube.com/results"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "youtube.com/results",
+                    "dest": "youtube.com/watch"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "youtube.com/watch",
+                    "dest": " dpkg frontend lock was locked by another process with pid 9949"
+                },
+                {
+                    "trigger": "performed_brave_search",
+                    "source": "youtube.com/watch",
+                    "dest": "donwload zoom ubuntu"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "youtube.com/watch",
+                    "dest": "download frefox ubunbtu"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "yt",
+                    "dest": "youtube.com"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "zoom.us/client/6.4.3.827/zoom_amd64.deb",
+                    "dest": "donwload zoom ubuntu"
+                },
+                {
+                    "trigger": "performed_bing_search",
+                    "source": "zoom.us/client/6.4.3.827/zoom_amd64.deb",
+                    "dest": "install zoom ubunbtu"
+                },
+                {
+                    "trigger": "downloaded_file",
+                    "source": "zoom.us/download",
+                    "dest": "zoom_amd64.deb"
+                },
+                {
+                    "trigger": "downloaded_file",
+                    "source": "zoom.us/download",
+                    "dest": "zoom_amd64__1"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "zoom_amd64.deb",
+                    "dest": "google.com"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "zoom_amd64__1",
+                    "dest": "yahoo.com"
+                }
+            ],
+            "functions": {}
+        }
+    ]
+}
