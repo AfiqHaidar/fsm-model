@@ -3,16 +3,16 @@
 # Usage:
 
 # Generate plaso file in directory "plaso_analysis_1"
-# .\plaso_script.ps1 -plaso -n 1
-# & "C:\Users\afiqh\OneDrive\Documents\TA\ta-code\plaso_script.ps1" -plaso -n 1
+# .\plaso.ps1 -plaso -n 1
+# & "C:\Users\afiqh\OneDrive\Documents\TA\ta-code\plaso.ps1" -plaso -n 1
 
 # Generate full timeline CSV in directory "plaso_analysis_1"
-# .\plaso_script.ps1 -csv -n 1 -a
-# & "C:\Users\afiqh\OneDrive\Documents\TA\ta-code\plaso_script.ps1" -csv -n 1 -a
+# .\plaso.ps1 -csv -n 1 -a
+# & "C:\Users\afiqh\OneDrive\Documents\TA\ta-code\plaso.ps1" -csv -n 1 -a
 
 # Generate filtered timeline in directory "plaso_analysis_1"
-# .\plaso_script.ps1 -csv -n 1 -t -ts "2023-01-01 00:00:00" -te "2024-12-31 23:59:59"  
-#& "C:\Users\afiqh\OneDrive\Documents\TA\ta-code\plaso_script.ps1" -csv -n 1 -t -ts "2023-01-01 00:00:00" -te "2024-12-31 23:59:59"
+# .\plaso.ps1 -csv -n 1 -t -ts "2023-01-01 00:00:00" -te "2024-12-31 23:59:59"  
+#& "C:\Users\afiqh\OneDrive\Documents\TA\ta-code\plaso.ps1" -csv -n 1 -t -ts "2023-01-01 00:00:00" -te "2024-12-31 23:59:59"
 
 param(
     [Parameter(Mandatory=$false)]

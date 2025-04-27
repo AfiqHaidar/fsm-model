@@ -1,7 +1,7 @@
 import os
-from processor import generate_json
-from factory import MachineFactory
-from runner import run_random_simulation, run_path_simulation, run_graph_simulation, run_max_depth_simulation
+from machine_source.processor import generate_json
+from machine_model.factory import MachineFactory
+from machine_simulation.runner import run_random_simulation, run_path_simulation, run_graph_simulation, run_max_depth_simulation
 from script.web_activity_script import web_activity_extract
 
 

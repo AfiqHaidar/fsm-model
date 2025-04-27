@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Machine Visualizer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .config-panel {
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .main-container {
+            display: flex;
+            flex: 1;
+            height: calc(100% - 120px);
+        }
+        .sidebar {
+            width: 300px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            overflow-y: auto;
+            border-right: 1px solid #ddd;
+        }
+        #graph-container {
+            flex: 1;
+            height: 100%;
+            position: relative;
+        }
+        #network {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #ddd;
+        }
+        .detail-panel {
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ddd;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+        .file-input {
+            flex-grow: 1;
+            min-width: 250px;
+        }
+        .controls-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .machine-select {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .legend {
+            margin-top: 20px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        .machine-info {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        #detail-panel-content {
+            margin: 0;
+        }
+        .status-message {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+        .status-error {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        .status-success {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+        #json-content-area {
+            width: 100%;
+            height: 150px;
+            font-family: monospace;
+            margin-top: 10px;
+            display: none;
+        }
+        .radio-group {
+            margin: 10px 0;
+        }
+        .sample-button {
+            background-color: #2196F3;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>State Machine Visualizer</h2>
+        <div class="controls-group">
+            <button id="save-image-btn">Save Image</button>
+            <button id="reset-view-btn">Reset View</button>
+        </div>
+    </div>
+
+    <div class="config-panel">
+        <div class="file-input">
+            <div class="radio-group">
+                <input type="radio" id="file-option" name="input-method" value="file" checked>
+                <label for="file-option">Load from file</label>
+                <input type="radio" id="paste-option" name="input-method" value="paste">
+                <label for="paste-option">Paste JSON</label>
+            </div>
+            <input type="file" id="json-file" accept=".json">
+            <textarea id="json-content-area" placeholder="Paste your JSON here..."></textarea>
+        </div>
+        <div class="controls-group">
+            <button id="load-json-btn">Load</button>
+            <select id="machine-select" class="machine-select">
+                <option value="">Select a Machine</option>
+            </select>
+        </div>
+
+        <div id="sample-data-section">
+            <h3>Sample Data:</h3>
+            <div id="sample-buttons"></div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <div id="machine-info" class="machine-info">
+                <h3>Machine Details</h3>
+                <p>No machine loaded</p>
+            </div>
+            <div class="legend">
+                <h3>Legend</h3>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #d0e0ff;"></div>
+                    <div>Normal State</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #b3e0ff;"></div>
+                    <div>Initial State</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #ff9999;"></div>
+                    <div>Dead End State</div>
+                </div>
+            </div>
+            <div id="status-message"></div>
+        </div>
+        <div id="graph-container">
+            <div id="network"></div>
+        </div>
+    </div>
+
+    <div class="detail-panel">
+        <p id="detail-panel-content">Hover over states or transitions to see details here.</p>
+    </div>
+
+    <script>
+        // Sample data for demonstration
+        const sampleData = {
+            "narcolepticSuperhero": {
+                "NarcolepticSuperheroes": [
+                    {
+                        "name": "SleepyMan",
+                        "initial_state": "asleep",
+                        "states": [
+                            "asleep", "tired", "hanging out", "hungry", "sweaty", "saving the world"
+                        ],
+                        "triggers": [
+                            "wake_up", "work_out", "eat", "distress_call", "complete_mission", "clean_up", "nap"
+                        ],
+                        "transitions": [
+                            { "trigger": "wake_up", "source": "asleep", "dest": "hanging out" },
+                            { "trigger": "work_out", "source": "hanging out", "dest": "hungry" },
+                            { "trigger": "eat", "source": "hungry", "dest": "hanging out" },
+                            { "trigger": "eat", "source": "hungry", "dest": "hungry" },
+                            { "trigger": "distress_call", "source": "*", "dest": "saving the world" },
+                            { "trigger": "complete_mission", "source": "saving the world", "dest": "sweaty" },
+                            { "trigger": "clean_up", "source": "sweaty", "dest": "asleep" },
+                            { "trigger": "clean_up", "source": "sweaty", "dest": "hanging out" },
+                            { "trigger": "nap", "source": "*", "dest": "asleep" }
+                        ]
+                    }
+                ]
+            },
+            "webActivity": {
+                "WebActivityMachine": [
+                    {
+                        "name": "Web_activity_sample",
+                        "initial_state": "google.com",
+                        "states": [
+                            "google.com", "youtube.com", "youtube.com/watch", "download whatsapp",
+                            "whatsapp.com/download", "WhatsApp.dmg"
+                        ],
+                        "triggers": [
+                            "performed_google_search", "accessed_website_link", "downloaded_file"
+                        ],
+                        "transitions": [
+                            { "trigger": "accessed_website_link", "source": "google.com", "dest": "youtube.com" },
+                            { "trigger": "accessed_website_link", "source": "youtube.com", "dest": "youtube.com/watch" },
+                            { "trigger": "performed_google_search", "source": "google.com", "dest": "download whatsapp" },
+                            { "trigger": "accessed_website_link", "source": "download whatsapp", "dest": "whatsapp.com/download" },
+                            { "trigger": "downloaded_file", "source": "whatsapp.com/download", "dest": "WhatsApp.dmg" }
+                        ]
+                    }
+                ]
+            }
+        };
+
+        // DOM elements
+        const fileInput = document.getElementById('json-file');
+        const jsonContentArea = document.getElementById('json-content-area');
+        const loadButton = document.getElementById('load-json-btn');
+        const machineSelect = document.getElementById('machine-select');
+        const fileOption = document.getElementById('file-option');
+        const pasteOption = document.getElementById('paste-option');
+        const saveImageBtn = document.getElementById('save-image-btn');
+        const resetViewBtn = document.getElementById('reset-view-btn');
+        const machineInfo = document.getElementById('machine-info');
+        const statusMessage = document.getElementById('status-message');
+        const detailPanelContent = document.getElementById('detail-panel-content');
+        const sampleButtonsContainer = document.getElementById('sample-buttons');
+
+        // Create sample data buttons
+        Object.keys(sampleData).forEach(key => {
+            const btn = document.createElement('button');
+            btn.classList.add('sample-button');
+            btn.textContent = key;
+            btn.onclick = () => loadSampleData(key);
+            sampleButtonsContainer.appendChild(btn);
+        });
+
+        // Variables
+        let network = null;
+        let jsonData = null;
+        let selectedMachine = null;
+        let nodes = new vis.DataSet([]);
+        let edges = new vis.DataSet([]);
+
+        // Input method toggle
+        fileOption.addEventListener('change', () => {
+            fileInput.style.display = 'block';
+            jsonContentArea.style.display = 'none';
+        });
+
+        pasteOption.addEventListener('change', () => {
+            fileInput.style.display = 'none';
+            jsonContentArea.style.display = 'block';
+        });
+
+        // Load sample data
+        function loadSampleData(key) {
+            jsonData = sampleData[key];
+            populateMachineSelect();
+            showStatusMessage(`Sample data "${key}" loaded successfully`, 'success');
+        }
+
+        // Load JSON data from file or textarea
+        loadButton.addEventListener('click', () => {
+            if (fileOption.checked && fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+                const reader = new FileReader();
+
+                reader.onload = function(e) {
+                    try {
+                        jsonData = JSON.parse(e.target.result);
+                        populateMachineSelect();
+                        showStatusMessage('File loaded successfully', 'success');
+                    } catch (error) {
+                        showStatusMessage('Error parsing JSON: ' + error.message, 'error');
+                    }
+                };
+
+                reader.readAsText(file);
+            } else if (pasteOption.checked && jsonContentArea.value.trim() !== '') {
+                try {
+                    jsonData = JSON.parse(jsonContentArea.value);
+                    populateMachineSelect();
+                    showStatusMessage('JSON loaded successfully', 'success');
+                } catch (error) {
+                    showStatusMessage('Error parsing JSON: ' + error.message, 'error');
+                }
+            } else {
+                showStatusMessage('Please select a file or paste JSON content', 'error');
+            }
+        });
+
+        // Populate machine select dropdown
+        function populateMachineSelect() {
+            // Clear existing options except the first one
+            while (machineSelect.options.length > 1) {
+                machineSelect.remove(1);
+            }
+
+            // Add new options
+            if (jsonData) {
+                const machineTypes = Object.keys(jsonData);
+                
+                machineTypes.forEach(type => {
+                    if (Array.isArray(jsonData[type])) {
+                        jsonData[type].forEach(machine => {
+                            const option = document.createElement('option');
+                            option.value = `${type}|${machine.name}`;
+                            option.textContent = `${type}: ${machine.name}`;
+                            machineSelect.appendChild(option);
+                        });
+                    }
+                });
+            }
+        }
+
+        // Machine selection change
+        machineSelect.addEventListener('change', () => {
+            if (machineSelect.value) {
+                const [type, name] = machineSelect.value.split('|');
+                if (jsonData[type]) {
+                    const machines = jsonData[type].filter(m => m.name === name);
+                    if (machines.length > 0) {
+                        selectedMachine = machines[0];
+                        visualizeStateMachine(selectedMachine);
+                        updateMachineInfo(selectedMachine);
+                    }
+                }
+            } else {
+                // Clear visualization if "Select a Machine" is chosen
+                nodes.clear();
+                edges.clear();
+                updateMachineInfo(null);
+            }
+        });
+
+        // Update machine info panel
+        function updateMachineInfo(machine) {
+            if (!machine) {
+                machineInfo.innerHTML = `
+                    <h3>Machine Details</h3>
+                    <p>No machine loaded</p>
+                `;
+                return;
+            }
+
+            const stateCount = machine.states ? machine.states.length : 0;
+            const transitionCount = machine.transitions ? machine.transitions.length : 0;
+            const triggerCount = machine.triggers ? machine.triggers.length : 0;
+
+            machineInfo.innerHTML = `
+                <h3>Machine Details</h3>
+                <p><strong>Name:</strong> ${machine.name}</p>
+                <p><strong>Initial State:</strong> ${machine.initial_state || 'None'}</p>
+                <p><strong>States:</strong> ${stateCount}</p>
+                <p><strong>Transitions:</strong> ${transitionCount}</p>
+                <p><strong>Triggers:</strong> ${triggerCount}</p>
+            `;
+        }
+
+        // Show status message
+        function showStatusMessage(message, type) {
+            statusMessage.textContent = message;
+            statusMessage.className = 'status-message';
+            statusMessage.classList.add(`status-${type}`);
+        }
+
+        // Visualize the state machine
+        function visualizeStateMachine(machine) {
+            if (!machine || !machine.states || !machine.transitions) {
+                showStatusMessage('Invalid machine data', 'error');
+                return;
+            }
+
+            // Clear existing network
+            nodes.clear();
+            edges.clear();
+
+            // Analyze states to find dead ends (states with no outgoing transitions)
+            const statesWithOutgoing = new Set();
+            machine.transitions.forEach(transition => {
+                if (transition.source !== '*') {
+                    statesWithOutgoing.add(transition.source);
+                }
+            });
+
+            // Create nodes for each state
+            machine.states.forEach(state => {
+                const isInitial = state === machine.initial_state;
+                const isDeadEnd = !statesWithOutgoing.has(state) && state !== machine.initial_state;
+                
+                nodes.add({
+                    id: state,
+                    label: state,
+                    color: {
+                        background: isInitial ? '#b3e0ff' : (isDeadEnd ? '#ff9999' : '#d0e0ff'),
+                        border: isInitial ? '#0066cc' : (isDeadEnd ? '#cc0000' : '#2B7CE9')
+                    },
+                    borderWidth: isInitial ? 3 : 1,
+                    shape: 'ellipse'
+                });
+            });
+
+            // Create edges for each transition
+            const processedEdges = new Map(); // To handle multiple transitions between the same states
+
+            machine.transitions.forEach(transition => {
+                if (transition.source === '*') {
+                    // Handle wildcard source transitions by creating edges from all states
+                    machine.states.forEach(sourceState => {
+                        if (sourceState !== transition.dest) {
+                            const edgeKey = `${sourceState}-${transition.dest}`;
+                            if (!processedEdges.has(edgeKey)) {
+                                // First edge between these states
+                                processedEdges.set(edgeKey, {
+                                    id: edgeKey,
+                                    from: sourceState,
+                                    to: transition.dest,
+                                    label: transition.trigger,
+                                    arrows: 'to',
+                                    triggers: [transition.trigger]
+                                });
+                            } else {
+                                // Additional trigger for existing edge
+                                const edge = processedEdges.get(edgeKey);
+                                edge.triggers.push(transition.trigger);
+                                edge.label = edge.triggers.slice(0, 2).join(', ');
+                                if (edge.triggers.length > 2) {
+                                    edge.label += '...';
+                                }
+                                edge.title = edge.triggers.join('<br>');
+                            }
+                        }
+                    });
+                } else {
+                    // Handle regular transitions
+                    const edgeKey = `${transition.source}-${transition.dest}`;
+                    if (!processedEdges.has(edgeKey)) {
+                        // First edge between these states
+                        processedEdges.set(edgeKey, {
+                            id: edgeKey,
+                            from: transition.source,
+                            to: transition.dest,
+                            label: transition.trigger,
+                            arrows: 'to',
+                            triggers: [transition.trigger]
+                        });
+                    } else {
+                        // Additional trigger for existing edge
+                        const edge = processedEdges.get(edgeKey);
+                        edge.triggers.push(transition.trigger);
+                        edge.label = edge.triggers.slice(0, 2).join(', ');
+                        if (edge.triggers.length > 2) {
+                            edge.label += '...';
+                        }
+                        edge.title = edge.triggers.join('<br>');
+                    }
+                }
+            });
+
+            // Add all processed edges to the dataset
+            edges.add(Array.from(processedEdges.values()));
+
+            // Create the network
+            const container = document.getElementById('network');
+            const data = { nodes, edges };
+            const options = {
+                nodes: {
+                    font: {
+                        size: 14
+                    },
+                    margin: 10,
+                    widthConstraint: {
+                        maximum: 150
+                    }
+                },
+                edges: {
+                    font: {
+                        size: 12,
+                        align: 'middle'
+                    },
+                    smooth: {
+                        type: 'straightCross',
+                        roundness: 0.5
+                    }
+                },
+                physics: {
+                    enabled: true,
+                    solver: 'forceAtlas2Based',
+                    forceAtlas2Based: {
+                        gravitationalConstant: -100,
+                        springLength: 150,
+                        springConstant: 0.08
+                    },
+                    stabilization: {
+                        iterations: 1000
+                    }
+                },
+                interaction: {
+                    hover: true,
+                    tooltipDelay: 200
+                }
+            };
+
+            // Destroy old network if it exists
+            if (network) {
+                network.destroy();
+            }
+
+            // Create new network
+            network = new vis.Network(container, data, options);
+
+            // Event listeners
+            network.on('hoverNode', function(params) {
+                const nodeId = params.node;
+                const node = nodes.get(nodeId);
+                
+                let info = `<strong>State:</strong> ${node.label}`;
+                
+                if (node.label === machine.initial_state) {
+                    info += ' (Initial State)';
+                }
+                
+                // Find outgoing transitions
+                const outgoing = machine.transitions.filter(t => 
+                    t.source === node.label || t.source === '*'
+                );
+                
+                if (outgoing.length > 0) {
+                    info += '<br><strong>Outgoing Transitions:</strong><br>';
+                    outgoing.forEach(t => {
+                        info += `• ${t.trigger} → ${t.dest}<br>`;
+                    });
+                } else {
+                    info += '<br><strong>No outgoing transitions</strong> (Dead End)';
+                }
+                
+                detailPanelContent.innerHTML = info;
+            });
+            
+            network.on('hoverEdge', function(params) {
+                const edgeId = params.edge;
+                const edge = edges.get(edgeId);
+                
+                let info = `<strong>Transition:</strong> ${edge.from} → ${edge.to}<br>`;
+                info += '<strong>Triggers:</strong><br>';
+                
+                if (edge.triggers) {
+                    edge.triggers.forEach(trigger => {
+                        info += `• ${trigger}<br>`;
+                    });
+                } else {
+                    info += `• ${edge.label}`;
+                }
+                
+                detailPanelContent.innerHTML = info;
+            });
+            
+            network.on('blurNode', function() {
+                detailPanelContent.innerHTML = 'Hover over states or transitions to see details here.';
+            });
+            
+            network.on('blurEdge', function() {
+                detailPanelContent.innerHTML = 'Hover over states or transitions to see details here.';
+            });
+
+            showStatusMessage(`Visualized machine: ${machine.name}`, 'success');
+        }
+
+        // Save as PNG
+        saveImageBtn.addEventListener('click', () => {
+            if (network) {
+                const canvas = network.canvas.frame.canvas;
+                const dataUrl = canvas.toDataURL('image/png');
+                const a = document.createElement('a');
+                a.href = dataUrl;
+                a.download = `${selectedMachine ? selectedMachine.name : 'state-machine'}.png`;
+                a.click();
+            } else {
+                showStatusMessage('No graph to save', 'error');
+            }
+        });
+
+        // Reset view
+        resetViewBtn.addEventListener('click', () => {
+            if (network) {
+                network.fit({
+                    animation: {
+                        duration: 1000,
+                        easingFunction: 'easeInOutQuad'
+                    }
+                });
+            }
+        });
+
+        // Initialize with empty graph
+        const container = document.getElementById('network');
+        const data = { nodes, edges };
+        const options = {
+            nodes: {
+                font: { size: 14 },
+                margin: 10
+            },
+            edges: {
+                font: { size: 12 },
+                smooth: true
+            }
+        };
+        
+        network = new vis.Network(container, data, options);
+    </script>
+</body>
+</html>
