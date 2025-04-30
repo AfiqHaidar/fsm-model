@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Machine Path Visualizer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        .header {
+            background-color: #4361ee;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .content {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+        
+        .sidebar {
+            width: 280px;
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-right: 1px solid #e9ecef;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            overflow-y: auto;
+        }
+        
+        .network-container {
+            flex: 1;
+            position: relative;
+        }
+        
+        #network {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+        }
+        
+        .panel {
+            background-color: white;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            margin-bottom: 0.5rem;
+        }
+        
+        .panel-title {
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            color: #333;
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 0.5rem;
+        }
+        
+        button {
+            background-color: #4361ee;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.2s;
+            margin-top: 0.5rem;
+            width: 100%;
+        }
+        
+        button:hover {
+            background-color: #3a0ca3;
+        }
+        
+        .save-btn {
+            background-color: #4cc9f0;
+        }
+        
+        .save-btn:hover {
+            background-color: #3aa1d9;
+        }
+
+        .find-paths-btn {
+            background-color: #f72585;
+        }
+        
+        .find-paths-btn:hover {
+            background-color: #b5179e;
+        }
+        
+        input[type="file"], input[type="number"], select {
+            margin-bottom: 0.5rem;
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .legend {
+            margin-top: 1rem;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .legend-color {
+            width: 15px;
+            height: 15px;
+            margin-right: 8px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        
+        .normal {
+            background-color: #ADD8E6;
+            border: 1px solid #4682B4;
+        }
+
+        .endpoint {
+            background-color: #FFD700;
+            border: 1px solid #B8860B;
+        }
+
+        .path-node {
+            background-color: #DDA0DD;
+            border: 1px solid #9932CC;
+        }
+        
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 4px;
+            display: none;
+            z-index: 1000;
+        }
+        
+        .notification.success {
+            background-color: #4cc9f0;
+        }
+        
+        .notification.error {
+            background-color: #f72585;
+        }
+
+        .paths-list {
+            max-height: 200px;
+            overflow-y: auto;
+            margin-top: 0.5rem;
+        }
+
+        .path-item {
+            padding: 0.5rem;
+            margin-bottom: 0.3rem;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background-color 0.2s;
+        }
+
+        .path-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .path-item.selected {
+            background-color: #e9ecef;
+            font-weight: bold;
+        }
+
+        .label {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>State Machine Path Visualizer</h1>
+    </div>
+    
+    <div class="content">
+        <div class="sidebar">
+            <div class="panel">
+                <div class="panel-title">Import Machine</div>
+                <input type="file" id="file-input" accept=".json">
+                <button id="load-button">Load Machine</button>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-title">Path Configuration</div>
+                <div class="form-group">
+                    <label class="label" for="end-node-select">End Node:</label>
+                    <select id="end-node-select">
+                        <option value="">Select an end node</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="max-depth-input">Max Depth:</label>
+                    <input type="number" id="max-depth-input" min="1" value="3">
+                </div>
+                <button id="find-paths-button" class="find-paths-btn">Find Paths</button>
+                <div id="paths-container" style="display: none;">
+                    <div class="panel-title" style="margin-top: 1rem;">Found Paths</div>
+                    <div id="paths-list" class="paths-list"></div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-title">Controls</div>
+                <button id="reset-button">Reset View</button>
+                <button id="clear-highlight-button">Clear Highlights</button>
+                <button id="save-button" class="save-btn">Save PNG</button>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-title">Legend</div>
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color normal"></div>
+                        <span>Normal State</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color endpoint"></div>
+                        <span>End Node</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color path-node"></div>
+                        <span>Path Node</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="network-container">
+            <div id="network"></div>
+        </div>
+    </div>
+    
+    <div id="notification" class="notification"></div>
+    
+    <script>
+        // Wait until the page is fully loaded
+        window.onload = function() {
+            // DOM elements
+            const fileInput = document.getElementById('file-input');
+            const loadButton = document.getElementById('load-button');
+            const resetButton = document.getElementById('reset-button');
+            const saveButton = document.getElementById('save-button');
+            const endNodeSelect = document.getElementById('end-node-select');
+            const maxDepthInput = document.getElementById('max-depth-input');
+            const findPathsButton = document.getElementById('find-paths-button');
+            const pathsContainer = document.getElementById('paths-container');
+            const pathsList = document.getElementById('paths-list');
+            const clearHighlightButton = document.getElementById('clear-highlight-button');
+            const notification = document.getElementById('notification');
+            
+            // Network variables
+            let network = null;
+            let nodes = new vis.DataSet();
+            let edges = new vis.DataSet();
+            let currentMachine = null;
+            let originalNodesData = [];
+            let originalEdgesData = [];
+            let foundPaths = [];
+            
+            // Initialize an empty network
+            function initializeNetwork() {
+                const container = document.getElementById('network');
+                const data = {
+                    nodes: nodes,
+                    edges: edges
+                };
+                
+                const options = {
+                    nodes: {
+                        shape: 'box',
+                        margin: 10,
+                        font: { size: 14 },
+                        borderWidth: 1,
+                        shadow: true,
+                        fixed: false  // Allow manual dragging
+                    },
+                    edges: {
+                        arrows: { to: true },
+                        smooth: {
+                            enabled: true,
+                            type: 'cubicBezier',
+                            roundness: 0.2,
+                            forceDirection: 'none'
+                        },
+                        font: { 
+                            size: 12, 
+                            align: 'middle',
+                            background: 'white'
+                        }
+                    },
+                    physics: {
+                        enabled: false  // Disable physics so nodes don't move on their own
+                    },
+                    interaction: {
+                        dragNodes: true,  // Allow dragging nodes
+                        dragView: true,   // Allow dragging the view
+                        zoomView: true    // Allow zooming
+                    }
+                };
+                
+                network = new vis.Network(container, data, options);
+            }
+            
+            // Show notification message
+            function showNotification(message, type = 'default') {
+                notification.textContent = message;
+                notification.className = 'notification';
+                
+                if (type === 'success') {
+                    notification.classList.add('success');
+                } else if (type === 'error') {
+                    notification.classList.add('error');
+                }
+                
+                notification.style.display = 'block';
+                
+                setTimeout(function() {
+                    notification.style.display = 'none';
+                }, 3000);
+            }
+            
+            // Apply grid layout
+            function applyGridLayout() {
+                if (nodes.length === 0) {
+                    return;
+                }
+                
+                // Disable physics
+                network.setOptions({ physics: { enabled: false } });
+                
+                // Arrange nodes in a grid with generous spacing
+                const nodeIds = nodes.getIds();
+                const nodeCount = nodeIds.length;
+                
+                // Calculate optimal number of columns based on the number of nodes
+                let cols;
+                if (nodeCount <= 4) {
+                    cols = 2;
+                } else if (nodeCount <= 9) {
+                    cols = 3;
+                } else if (nodeCount <= 16) {
+                    cols = 4;
+                } else if (nodeCount <= 25) {
+                    cols = 5;
+                } else if (nodeCount <= 36) {
+                    cols = 6;
+                } else {
+                    cols = Math.ceil(Math.sqrt(nodeCount));
+                }
+                
+                // Calculate spacing based on the number of nodes
+                const baseSpacing = 200; // Base spacing for small graphs
+                const spacing = nodeCount > 25 ? baseSpacing * 0.8 : baseSpacing; // Reduce spacing a bit for larger graphs
+                
+                nodeIds.forEach(function(id, index) {
+                    const col = index % cols;
+                    const row = Math.floor(index / cols);
+                    
+                    nodes.update({
+                        id: id,
+                        x: col * spacing,
+                        y: row * spacing
+                    });
+                });
+                
+                resetView();
+            }
+            
+            // Reset view to fit all nodes
+            function resetView() {
+                if (network && nodes.length > 0) {
+                    network.fit({
+                        animation: {
+                            duration: 1000,
+                            easingFunction: 'easeInOutQuad'
+                        }
+                    });
+                }
+            }
+            
+            // Save network as PNG
+            function saveAsPng() {
+                if (!network || nodes.length === 0) {
+                    showNotification('No network to save', 'error');
+                    return;
+                }
+                
+                try {
+                    // Create a canvas element
+                    const canvas = network.canvas.frame.canvas;
+                    
+                    // Convert canvas to data URL
+                    const dataURL = canvas.toDataURL('image/png');
+                    
+                    // Create link element for downloading
+                    const downloadLink = document.createElement('a');
+                    downloadLink.href = dataURL;
+                    downloadLink.download = currentMachine ? 
+                        `${currentMachine.name}.png` : 
+                        'state-machine.png';
+                    
+                    // Append to body, click and remove
+                    document.body.appendChild(downloadLink);
+                    downloadLink.click();
+                    document.body.removeChild(downloadLink);
+                    
+                    showNotification('Image saved successfully', 'success');
+                } catch (error) {
+                    showNotification('Error saving image: ' + error.message, 'error');
+                    console.error('Error saving image:', error);
+                }
+            }
+            
+            // Calculate label dimensions to better position nodes
+            function estimateLabelSize(label) {
+                // Average character width (rough estimate)
+                const avgCharWidth = 8;
+                const height = 20; // Fixed height for a single-line label
+                const width = label.length * avgCharWidth + 20; // Add padding
+                
+                return {width, height};
+            }
+            
+            // Create visualization for a state machine
+            function visualizeMachine(machine) {
+                // Clear existing data
+                nodes.clear();
+                edges.clear();
+                endNodeSelect.innerHTML = '<option value="">Select an end node</option>';
+                pathsContainer.style.display = 'none';
+                
+                if (!machine.states || !machine.transitions) {
+                    showNotification('Invalid machine format', 'error');
+                    return;
+                }
+                
+                // Identify dead-end states (states with no outgoing transitions)
+                const statesWithOutgoing = new Set();
+                
+                machine.transitions.forEach(function(transition) {
+                    if (transition.source !== '*') {
+                        statesWithOutgoing.add(transition.source);
+                    }
+                });
+                
+                // Create nodes for all states - all with normal appearance
+                machine.states.forEach(function(state) {
+                    // Add spacing based on label size
+                    const labelSize = estimateLabelSize(state);
+                    
+                    nodes.add({
+                        id: state,
+                        label: state,
+                        color: {
+                            background: '#ADD8E6',  // Normal state color for all
+                            border: '#4682B4'       // Normal border for all
+                        },
+                        borderWidth: 1,
+                        widthConstraint: Math.max(100, labelSize.width), // Minimum width of 100px
+                        heightConstraint: Math.max(40, labelSize.height + 20) // Minimum height of 40px
+                    });
+
+                    // Add state to end node select
+                    const option = document.createElement('option');
+                    option.value = state;
+                    option.textContent = state;
+                    endNodeSelect.appendChild(option);
+                });
+                
+                // Process transitions to create edges
+                const processedEdges = new Map();
+                
+                machine.transitions.forEach(function(transition) {
+                    if (transition.source === '*') {
+                        // Handle wildcard transitions
+                        machine.states.forEach(function(state) {
+                            if (state !== transition.dest) {
+                                const edgeKey = `${state}-${transition.dest}`;
+                                
+                                if (!processedEdges.has(edgeKey)) {
+                                    processedEdges.set(edgeKey, {
+                                        id: edgeKey,
+                                        from: state,
+                                        to: transition.dest,
+                                        label: transition.trigger
+                                    });
+                                }
+                            }
+                        });
+                    } else {
+                        // Regular transition
+                        const edgeKey = `${transition.source}-${transition.dest}`;
+                        
+                        if (!processedEdges.has(edgeKey)) {
+                            processedEdges.set(edgeKey, {
+                                id: edgeKey,
+                                from: transition.source,
+                                to: transition.dest,
+                                label: transition.trigger
+                            });
+                        } else {
+                            // Multiple triggers between same states
+                            const existingEdge = processedEdges.get(edgeKey);
+                            if (!existingEdge.label.includes(transition.trigger)) {
+                                existingEdge.label += `, ${transition.trigger}`;
+                            }
+                        }
+                    }
+                });
+                
+                // Add all processed edges to the network
+                edges.add(Array.from(processedEdges.values()));
+                
+                // Store original data for later use
+                originalNodesData = nodes.get();
+                originalEdgesData = edges.get();
+                
+                // Apply grid layout and reset view
+                setTimeout(function() {
+                    applyGridLayout();
+                    showNotification(`Machine "${machine.name}" loaded successfully`, 'success');
+                }, 100);
+            }
+            
+            // Find all paths from any node to the selected end node with maximum depth
+            function findAllPaths(endNode, maxDepth) {
+                if (!currentMachine || !endNode) {
+                    showNotification('Please select a machine and an end node', 'error');
+                    return [];
+                }
+                
+                // Build a graph representation for easy traversal
+                const graph = {};
+                
+                // Initialize empty adjacency lists for all states
+                currentMachine.states.forEach(state => {
+                    graph[state] = [];
+                });
+                
+                // Populate graph with transitions
+                currentMachine.transitions.forEach(transition => {
+                    if (transition.source === '*') {
+                        // Handle wildcard transitions
+                        currentMachine.states.forEach(state => {
+                            if (state !== transition.dest) {
+                                graph[state].push({
+                                    dest: transition.dest,
+                                    trigger: transition.trigger
+                                });
+                            }
+                        });
+                    } else {
+                        graph[transition.source].push({
+                            dest: transition.dest,
+                            trigger: transition.trigger
+                        });
+                    }
+                });
+                
+                const allPaths = [];
+                
+                // DFS to find all paths to the end node
+                function dfs(currentNode, path, depth) {
+                    // Add current node to the path
+                    path.push(currentNode);
+                    
+                    // If reached the end node, add the path to the result
+                    if (currentNode === endNode) {
+                        allPaths.push([...path]);
+                        path.pop();
+                        return;
+                    }
+                    
+                    // If reached maximum depth, stop exploring this path
+                    if (depth >= maxDepth) {
+                        path.pop();
+                        return;
+                    }
+                    
+                    // Explore all neighbors
+                    for (const neighbor of graph[currentNode]) {
+                        // Skip if the neighbor would create a cycle
+                        if (!path.includes(neighbor.dest)) {
+                            dfs(neighbor.dest, path, depth + 1);
+                        }
+                    }
+                    
+                    // Backtrack
+                    path.pop();
+                }
+                
+                // Start DFS from each node
+                currentMachine.states.forEach(state => {
+                    // Skip if starting from the end node itself (would be a 1-node path)
+                    if (state !== endNode) {
+                        dfs(state, [], 0);
+                    }
+                });
+                
+                // Add single-node path if the end node is a state
+                if (currentMachine.states.includes(endNode)) {
+                    allPaths.push([endNode]);
+                }
+                
+                return allPaths;
+            }
+            
+            // Highlight a specific path
+            function highlightPath(path) {
+                // Reset all nodes and edges to original state
+                clearHighlights();
+                
+                // Highlight the end node
+                const endNode = path[path.length - 1];
+                nodes.update({
+                    id: endNode,
+                    color: {
+                        background: '#FFD700',
+                        border: '#B8860B'
+                    },
+                    borderWidth: 2
+                });
+                
+                // Highlight path nodes
+                for (let i = 0; i < path.length - 1; i++) {
+                    const node = path[i];
+                    
+                    // Highlight the node
+                    nodes.update({
+                        id: node,
+                        color: {
+                            background: '#DDA0DD',
+                            border: '#9932CC'
+                        },
+                        borderWidth: 2
+                    });
+                    
+                    // Highlight the edge between this node and next node
+                    const edgeId = `${node}-${path[i + 1]}`;
+                    if (edges.get(edgeId)) {
+                        edges.update({
+                            id: edgeId,
+                            color: {
+                                color: '#9932CC',
+                                highlight: '#9932CC'
+                            },
+                            width: 3
+                        });
+                    }
+                }
+            }
+            
+            // Clear all highlights
+            function clearHighlights() {
+                // Reset nodes to original state
+                originalNodesData.forEach(node => {
+                    nodes.update({
+                        id: node.id,
+                        color: node.color,
+                        borderWidth: node.borderWidth
+                    });
+                });
+                
+                // Reset edges to original state
+                originalEdgesData.forEach(edge => {
+                    edges.update({
+                        id: edge.id,
+                        color: undefined, // Reset to default
+                        width: 1
+                    });
+                });
+            }
+            
+            // Display found paths in the sidebar
+            function displayPaths(paths) {
+                pathsList.innerHTML = '';
+                
+                if (paths.length === 0) {
+                    const noPathsItem = document.createElement('div');
+                    noPathsItem.className = 'path-item';
+                    noPathsItem.textContent = 'No paths found';
+                    pathsList.appendChild(noPathsItem);
+                    return;
+                }
+                
+                // Sort paths by length (shortest first)
+                paths.sort((a, b) => a.length - b.length);
+                
+                paths.forEach((path, index) => {
+                    const pathItem = document.createElement('div');
+                    pathItem.className = 'path-item';
+                    pathItem.textContent = `Path ${index + 1}: ${path.join(' → ')}`;
+                    pathItem.dataset.pathIndex = index;
+                    
+                    pathItem.addEventListener('click', function() {
+                        // Clear previous selection
+                        document.querySelectorAll('.path-item.selected').forEach(item => {
+                            item.classList.remove('selected');
+                        });
+                        
+                        // Mark this path as selected
+                        this.classList.add('selected');
+                        
+                        // Highlight the path
+                        highlightPath(paths[this.dataset.pathIndex]);
+                    });
+                    
+                    pathsList.appendChild(pathItem);
+                });
+            }
+            
+            // Load state machine from JSON file
+            function loadMachineFromJson(jsonData) {
+                try {
+                    // Get the first property name (machine type)
+                    const machineType = Object.keys(jsonData)[0];
+                    
+                    if (!jsonData[machineType] || !Array.isArray(jsonData[machineType]) || jsonData[machineType].length === 0) {
+                        showNotification('Invalid machine format', 'error');
+                        return;
+                    }
+                    
+                    // Get the first machine definition
+                    currentMachine = jsonData[machineType][0];
+                    
+                    // Create visualization
+                    visualizeMachine(currentMachine);
+                    
+                } catch (error) {
+                    showNotification('Error processing JSON: ' + error.message, 'error');
+                    console.error('Error processing JSON:', error);
+                }
+            }
+            
+            // Initialize network
+            initializeNetwork();
+            
+            // Add event listeners
+            loadButton.addEventListener('click', function() {
+                if (fileInput.files.length === 0) {
+                    showNotification('Please select a JSON file first', 'error');
+                    return;
+                }
+                
+                const file = fileInput.files[0];
+                const reader = new FileReader();
+                
+                reader.onload = function(event) {
+                    try {
+                        const jsonData = JSON.parse(event.target.result);
+                        loadMachineFromJson(jsonData);
+                    } catch (error) {
+                        showNotification('Error parsing JSON file: ' + error.message, 'error');
+                        console.error('Error parsing JSON:', error);
+                    }
+                };
+                
+                reader.onerror = function() {
+                    showNotification('Error reading file', 'error');
+                };
+                
+                reader.readAsText(file);
+            });
+            
+            findPathsButton.addEventListener('click', function() {
+                const endNode = endNodeSelect.value;
+                const maxDepth = parseInt(maxDepthInput.value);
+                
+                if (!endNode) {
+                    showNotification('Please select an end node', 'error');
+                    return;
+                }
+                
+                if (isNaN(maxDepth) || maxDepth < 1) {
+                    showNotification('Please enter a valid max depth (minimum 1)', 'error');
+                    return;
+                }
+                
+                // Find all paths to the end node
+                foundPaths = findAllPaths(endNode, maxDepth);
+                
+                // Display the paths
+                displayPaths(foundPaths);
+                
+                // Show paths container
+                pathsContainer.style.display = 'block';
+                
+                // Show notification
+                showNotification(`Found ${foundPaths.length} paths to "${endNode}" within max depth of ${maxDepth}`, 'success');
+            });
+            
+            resetButton.addEventListener('click', resetView);
+            saveButton.addEventListener('click', saveAsPng);
+            clearHighlightButton.addEventListener('click', clearHighlights);
+        };
+    </script>
+</body>
+</html>
