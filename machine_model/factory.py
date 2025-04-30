@@ -1,7 +1,7 @@
 import os
 import json
-from narcoleptic_superhero import NarcolepticSuperhero
-from base import Base
+from machine_model.narcoleptic_superhero import NarcolepticSuperhero
+from machine_model.base import Base
 
 
 class MachineFactory:

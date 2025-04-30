@@ -1,0 +1,80 @@
+{
+  "NarcolepticSuperheroes": [
+    {
+      "name": "SleepyMan",
+      "initial_state": "asleep",
+      "states": [
+        "asleep",
+        "tired",
+        "hanging out",
+        "hungry",
+        "sweaty",
+        "saving the world"
+      ],
+      "triggers": [
+        "wake_up",
+        "work_out",
+        "eat",
+        "distress_call",
+        "complete_mission",
+        "clean_up",
+        "nap"
+      ],
+      "transitions": [
+        {
+          "trigger": "wake_up",
+          "source": "asleep",
+          "dest": "hanging out"
+        },
+        {
+          "trigger": "work_out",
+          "source": "hanging out",
+          "dest": "hungry"
+        },
+        {
+          "trigger": "eat",
+          "source": "hungry",
+          "dest": "hanging out"
+        },
+        {
+          "trigger": "eat",
+          "source": "hungry",
+          "dest": "hungry"
+        },
+        {
+          "trigger": "distress_call",
+          "source": "*",
+          "dest": "saving the world",
+          "before": "change_into_super_secret_costume"
+        },
+        {
+          "trigger": "complete_mission",
+          "source": "saving the world",
+          "dest": "sweaty",
+          "after": "update_journal"
+        },
+        {
+          "trigger": "clean_up",
+          "source": "sweaty",
+          "dest": "asleep",
+          "conditions": ["is_exhausted"]
+        },
+        {
+          "trigger": "clean_up",
+          "source": "sweaty",
+          "dest": "hanging out"
+        },
+        {
+          "trigger": "nap",
+          "source": "*",
+          "dest": "asleep"
+        }
+      ],
+      "functions": {
+        "update_journal": "update_journal",
+        "change_into_super_secret_costume": "change_into_super_secret_costume",
+        "is_exhausted": "is_exhausted"
+      }
+    }
+  ]
+}

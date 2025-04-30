@@ -1,7 +1,7 @@
-from random_state_simulation import random_state_simulation
-from path_state_simulation import path_state_simulation
-from max_depth_path_simulation import max_depth_path_simulation
-from graph_simulation import GraphSimulation
+from machine_simulation.random_state_simulation import random_state_simulation
+from machine_simulation.path_state_simulation import path_state_simulation
+from machine_simulation.max_depth_path_simulation import max_depth_path_simulation
+from machine_simulation.graph_simulation import GraphSimulation
 import os
 
 

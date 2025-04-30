@@ -1,0 +1,116 @@
+{
+    "WebActivityMachine": [
+        {
+            "name": "web_activity_20250429_115259",
+            "initial_state": "mozilla.org/privacy/firefox",
+            "states": [
+                "mozilla.org/privacy/firefox",
+                "mozilla.org/en-US/privacy/firefox",
+                "mozilla.org/about",
+                "support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars",
+                "support.mozilla.org/products/firefox",
+                "mozilla.org/contribute",
+                "download zoom for ubuntu",
+                "zoom.us/download",
+                "zoom.us/client/6.4.6.1370/zoom_amd64.deb",
+                "zoom_amd64.deb",
+                "y",
+                "youtube.com",
+                "youtube.com/results",
+                "youtube.com/watch",
+                "sql injection",
+                "w3schools.com/sql/sql_injection.asp"
+            ],
+            "triggers": [
+                "performed_google_search",
+                "accessed_website",
+                "accessed_website_redirect",
+                "accessed_website_link",
+                "downloaded_file"
+            ],
+            "transitions": [
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "download zoom for ubuntu",
+                    "dest": "zoom.us/download"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "mozilla.org/about",
+                    "dest": "support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "mozilla.org/contribute",
+                    "dest": "download zoom for ubuntu"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "mozilla.org/contribute",
+                    "dest": "mozilla.org/about"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "mozilla.org/en-US/privacy/firefox",
+                    "dest": "mozilla.org/about"
+                },
+                {
+                    "trigger": "accessed_website_redirect",
+                    "source": "mozilla.org/privacy/firefox",
+                    "dest": "mozilla.org/en-US/privacy/firefox"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "sql injection",
+                    "dest": "w3schools.com/sql/sql_injection.asp"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars",
+                    "dest": "support.mozilla.org/products/firefox"
+                },
+                {
+                    "trigger": "accessed_website",
+                    "source": "support.mozilla.org/products/firefox",
+                    "dest": "mozilla.org/contribute"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "y",
+                    "dest": "youtube.com"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "youtube.com",
+                    "dest": "youtube.com/results"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "youtube.com/results",
+                    "dest": "youtube.com/watch"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "youtube.com/watch",
+                    "dest": "sql injection"
+                },
+                {
+                    "trigger": "downloaded_file",
+                    "source": "zoom.us/client/6.4.6.1370/zoom_amd64.deb",
+                    "dest": "zoom_amd64.deb"
+                },
+                {
+                    "trigger": "accessed_website_link",
+                    "source": "zoom.us/download",
+                    "dest": "zoom.us/client/6.4.6.1370/zoom_amd64.deb"
+                },
+                {
+                    "trigger": "performed_google_search",
+                    "source": "zoom_amd64.deb",
+                    "dest": "y"
+                }
+            ],
+            "functions": {}
+        }
+    ]
+}
